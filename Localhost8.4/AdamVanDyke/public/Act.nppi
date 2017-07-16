@@ -1,0 +1,806 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ImportProfile Ver="1.2">
+  <General ConnectionName="Localhost8.4" DatabaseName="AdamVanDyke" SchemaName="public" SourceFile="Provider=MSDASQL.1;Password=K1mb3rl4;Persist Security Info=True;User ID=ActReader;Data Source=AdamVanDyke_Act;Initial Catalog=AdamVanDyke" SourceCodepage="65001" ImportType="ODBC" ImportMode="Append" UseExtendedInsert="True" IsFixedWidth="False" FieldDelimiter="	" RowDelimiter="0x" TextQualifier="&quot;" XmlIncludeAttributes="False" FirstRow="1" LastRow="-1" FieldNameRow="1" DateFormat="MDY" DateSeparator="/" TimeSeparator=":" DecimalSeparator="." DateTimeTzOrder="DT" UseEmptyStrAsNull="False" UseFKeyConstraint="False" ContinueOnError="True" IncludeUniqueIndexFKey="False" CreateAutoInc="False" AccessSystemDBFile="" AccessDBPassword="" AccessLogonName="" AccessLogonPassword="" BreakList=""/>
+  <STable SSchemaName="dbo" STableName="TBL_ACTIVITY" TTableName="TBL_ACTIVITY" IsNewTable="True" ConditionQuery="" Query="" SourceFile="">
+    <SField SFieldName="ACTIVITYID" SFieldCreateName="ACTIVITYID" SFieldType="text" SFieldLength="0" SFieldScale="0" IsSelected="True" AutoInc="False">
+      <TField TFieldName="ACTIVITYID" TFieldType="text" TFieldLength="0" TFieldScale="0" IsKey="False" AllowNull="True" IsAutoInc="False"/>
+    </SField>
+    <SField SFieldName="ACTIVITYTYPEID" SFieldCreateName="ACTIVITYTYPEID" SFieldType="int2" SFieldLength="0" SFieldScale="0" IsSelected="True" AutoInc="False">
+      <TField TFieldName="ACTIVITYTYPEID" TFieldType="int2" TFieldLength="0" TFieldScale="0" IsKey="False" AllowNull="True" IsAutoInc="False"/>
+    </SField>
+    <SField SFieldName="ACTIVITYSERIESAPPLIEDID" SFieldCreateName="ACTIVITYSERIESAPPLIEDID" SFieldType="text" SFieldLength="0" SFieldScale="0" IsSelected="True" AutoInc="False">
+      <TField TFieldName="ACTIVITYSERIESAPPLIEDID" TFieldType="text" TFieldLength="0" TFieldScale="0" IsKey="False" AllowNull="True" IsAutoInc="False"/>
+    </SField>
+    <SField SFieldName="REGARDING" SFieldCreateName="REGARDING" SFieldType="varchar" SFieldLength="256" SFieldScale="0" IsSelected="True" AutoInc="False">
+      <TField TFieldName="REGARDING" TFieldType="varchar" TFieldLength="256" TFieldScale="0" IsKey="False" AllowNull="True" IsAutoInc="False"/>
+    </SField>
+    <SField SFieldName="STARTTIME" SFieldCreateName="STARTTIME" SFieldType="timestamp" SFieldLength="0" SFieldScale="0" IsSelected="True" AutoInc="False">
+      <TField TFieldName="STARTTIME" TFieldType="timestamp" TFieldLength="0" TFieldScale="0" IsKey="False" AllowNull="True" IsAutoInc="False"/>
+    </SField>
+    <SField SFieldName="ENDTIME" SFieldCreateName="ENDTIME" SFieldType="timestamp" SFieldLength="0" SFieldScale="0" IsSelected="True" AutoInc="False">
+      <TField TFieldName="ENDTIME" TFieldType="timestamp" TFieldLength="0" TFieldScale="0" IsKey="False" AllowNull="True" IsAutoInc="False"/>
+    </SField>
+    <SField SFieldName="ORIGINALTIME" SFieldCreateName="ORIGINALTIME" SFieldType="timestamp" SFieldLength="0" SFieldScale="0" IsSelected="True" AutoInc="False">
+      <TField TFieldName="ORIGINALTIME" TFieldType="timestamp" TFieldLength="0" TFieldScale="0" IsKey="False" AllowNull="True" IsAutoInc="False"/>
+    </SField>
+    <SField SFieldName="ISTIMELESS" SFieldCreateName="ISTIMELESS" SFieldType="bool" SFieldLength="0" SFieldScale="0" IsSelected="True" AutoInc="False">
+      <TField TFieldName="ISTIMELESS" TFieldType="bool" TFieldLength="0" TFieldScale="0" IsKey="False" AllowNull="True" IsAutoInc="False"/>
+    </SField>
+    <SField SFieldName="LOCATION" SFieldCreateName="LOCATION" SFieldType="varchar" SFieldLength="128" SFieldScale="0" IsSelected="True" AutoInc="False">
+      <TField TFieldName="LOCATION" TFieldType="varchar" TFieldLength="128" TFieldScale="0" IsKey="False" AllowNull="True" IsAutoInc="False"/>
+    </SField>
+    <SField SFieldName="ISPRIVATE" SFieldCreateName="ISPRIVATE" SFieldType="int4" SFieldLength="0" SFieldScale="0" IsSelected="True" AutoInc="False">
+      <TField TFieldName="ISPRIVATE" TFieldType="int4" TFieldLength="0" TFieldScale="0" IsKey="False" AllowNull="True" IsAutoInc="False"/>
+    </SField>
+    <SField SFieldName="ORGANIZEUSERID" SFieldCreateName="ORGANIZEUSERID" SFieldType="text" SFieldLength="0" SFieldScale="0" IsSelected="True" AutoInc="False">
+      <TField TFieldName="ORGANIZEUSERID" TFieldType="text" TFieldLength="0" TFieldScale="0" IsKey="False" AllowNull="True" IsAutoInc="False"/>
+    </SField>
+    <SField SFieldName="DETAILS" SFieldCreateName="DETAILS" SFieldType="text" SFieldLength="0" SFieldScale="0" IsSelected="True" AutoInc="False">
+      <TField TFieldName="DETAILS" TFieldType="text" TFieldLength="0" TFieldScale="0" IsKey="False" AllowNull="True" IsAutoInc="False"/>
+    </SField>
+    <SField SFieldName="MASTERACTIVITYID" SFieldCreateName="MASTERACTIVITYID" SFieldType="text" SFieldLength="0" SFieldScale="0" IsSelected="True" AutoInc="False">
+      <TField TFieldName="MASTERACTIVITYID" TFieldType="text" TFieldLength="0" TFieldScale="0" IsKey="False" AllowNull="True" IsAutoInc="False"/>
+    </SField>
+    <SField SFieldName="PARENTACTIVITYID" SFieldCreateName="PARENTACTIVITYID" SFieldType="text" SFieldLength="0" SFieldScale="0" IsSelected="True" AutoInc="False">
+      <TField TFieldName="PARENTACTIVITYID" TFieldType="text" TFieldLength="0" TFieldScale="0" IsKey="False" AllowNull="True" IsAutoInc="False"/>
+    </SField>
+    <SField SFieldName="RECURSOURCEACTIVITYID" SFieldCreateName="RECURSOURCEACTIVITYID" SFieldType="text" SFieldLength="0" SFieldScale="0" IsSelected="True" AutoInc="False">
+      <TField TFieldName="RECURSOURCEACTIVITYID" TFieldType="text" TFieldLength="0" TFieldScale="0" IsKey="False" AllowNull="True" IsAutoInc="False"/>
+    </SField>
+    <SField SFieldName="ISEVENT" SFieldCreateName="ISEVENT" SFieldType="bool" SFieldLength="0" SFieldScale="0" IsSelected="True" AutoInc="False">
+      <TField TFieldName="ISEVENT" TFieldType="bool" TFieldLength="0" TFieldScale="0" IsKey="False" AllowNull="True" IsAutoInc="False"/>
+    </SField>
+    <SField SFieldName="SOURCENUM" SFieldCreateName="SOURCENUM" SFieldType="int4" SFieldLength="0" SFieldScale="0" IsSelected="True" AutoInc="False">
+      <TField TFieldName="SOURCENUM" TFieldType="int4" TFieldLength="0" TFieldScale="0" IsKey="False" AllowNull="True" IsAutoInc="False"/>
+    </SField>
+    <SField SFieldName="EXTERNALID" SFieldCreateName="EXTERNALID" SFieldType="varchar" SFieldLength="1024" SFieldScale="0" IsSelected="True" AutoInc="False">
+      <TField TFieldName="EXTERNALID" TFieldType="varchar" TFieldLength="1024" TFieldScale="0" IsKey="False" AllowNull="True" IsAutoInc="False"/>
+    </SField>
+    <SField SFieldName="RECURPERIOD" SFieldCreateName="RECURPERIOD" SFieldType="int4" SFieldLength="0" SFieldScale="0" IsSelected="True" AutoInc="False">
+      <TField TFieldName="RECURPERIOD" TFieldType="int4" TFieldLength="0" TFieldScale="0" IsKey="False" AllowNull="True" IsAutoInc="False"/>
+    </SField>
+    <SField SFieldName="RECURFREQ" SFieldCreateName="RECURFREQ" SFieldType="int4" SFieldLength="0" SFieldScale="0" IsSelected="True" AutoInc="False">
+      <TField TFieldName="RECURFREQ" TFieldType="int4" TFieldLength="0" TFieldScale="0" IsKey="False" AllowNull="True" IsAutoInc="False"/>
+    </SField>
+    <SField SFieldName="RECURMODIFIER" SFieldCreateName="RECURMODIFIER" SFieldType="int4" SFieldLength="0" SFieldScale="0" IsSelected="True" AutoInc="False">
+      <TField TFieldName="RECURMODIFIER" TFieldType="int4" TFieldLength="0" TFieldScale="0" IsKey="False" AllowNull="True" IsAutoInc="False"/>
+    </SField>
+    <SField SFieldName="RECURDAY" SFieldCreateName="RECURDAY" SFieldType="int4" SFieldLength="0" SFieldScale="0" IsSelected="True" AutoInc="False">
+      <TField TFieldName="RECURDAY" TFieldType="int4" TFieldLength="0" TFieldScale="0" IsKey="False" AllowNull="True" IsAutoInc="False"/>
+    </SField>
+    <SField SFieldName="RECURDAYTYPE" SFieldCreateName="RECURDAYTYPE" SFieldType="int4" SFieldLength="0" SFieldScale="0" IsSelected="True" AutoInc="False">
+      <TField TFieldName="RECURDAYTYPE" TFieldType="int4" TFieldLength="0" TFieldScale="0" IsKey="False" AllowNull="True" IsAutoInc="False"/>
+    </SField>
+    <SField SFieldName="RECURMONTH" SFieldCreateName="RECURMONTH" SFieldType="int4" SFieldLength="0" SFieldScale="0" IsSelected="True" AutoInc="False">
+      <TField TFieldName="RECURMONTH" TFieldType="int4" TFieldLength="0" TFieldScale="0" IsKey="False" AllowNull="True" IsAutoInc="False"/>
+    </SField>
+    <SField SFieldName="RECURENDDATE" SFieldCreateName="RECURENDDATE" SFieldType="timestamp" SFieldLength="0" SFieldScale="0" IsSelected="True" AutoInc="False">
+      <TField TFieldName="RECURENDDATE" TFieldType="timestamp" TFieldLength="0" TFieldScale="0" IsKey="False" AllowNull="True" IsAutoInc="False"/>
+    </SField>
+    <SField SFieldName="ISRECURENDLESS" SFieldCreateName="ISRECURENDLESS" SFieldType="bool" SFieldLength="0" SFieldScale="0" IsSelected="True" AutoInc="False">
+      <TField TFieldName="ISRECURENDLESS" TFieldType="bool" TFieldLength="0" TFieldScale="0" IsKey="False" AllowNull="True" IsAutoInc="False"/>
+    </SField>
+    <SField SFieldName="ISDELETED" SFieldCreateName="ISDELETED" SFieldType="bool" SFieldLength="0" SFieldScale="0" IsSelected="True" AutoInc="False">
+      <TField TFieldName="ISDELETED" TFieldType="bool" TFieldLength="0" TFieldScale="0" IsKey="False" AllowNull="True" IsAutoInc="False"/>
+    </SField>
+    <SField SFieldName="DELETED_DATES" SFieldCreateName="DELETED_DATES" SFieldType="text" SFieldLength="0" SFieldScale="0" IsSelected="True" AutoInc="False">
+      <TField TFieldName="DELETED_DATES" TFieldType="text" TFieldLength="0" TFieldScale="0" IsKey="False" AllowNull="True" IsAutoInc="False"/>
+    </SField>
+    <SField SFieldName="TZ_BIAS" SFieldCreateName="TZ_BIAS" SFieldType="int2" SFieldLength="0" SFieldScale="0" IsSelected="True" AutoInc="False">
+      <TField TFieldName="TZ_BIAS" TFieldType="int2" TFieldLength="0" TFieldScale="0" IsKey="False" AllowNull="True" IsAutoInc="False"/>
+    </SField>
+    <SField SFieldName="TZ_DAYLIGHT_BIAS" SFieldCreateName="TZ_DAYLIGHT_BIAS" SFieldType="int2" SFieldLength="0" SFieldScale="0" IsSelected="True" AutoInc="False">
+      <TField TFieldName="TZ_DAYLIGHT_BIAS" TFieldType="int2" TFieldLength="0" TFieldScale="0" IsKey="False" AllowNull="True" IsAutoInc="False"/>
+    </SField>
+    <SField SFieldName="TZ_STANDARD_BIAS" SFieldCreateName="TZ_STANDARD_BIAS" SFieldType="int2" SFieldLength="0" SFieldScale="0" IsSelected="True" AutoInc="False">
+      <TField TFieldName="TZ_STANDARD_BIAS" TFieldType="int2" TFieldLength="0" TFieldScale="0" IsKey="False" AllowNull="True" IsAutoInc="False"/>
+    </SField>
+    <SField SFieldName="TZ_DAYLIGHT_MONTH" SFieldCreateName="TZ_DAYLIGHT_MONTH" SFieldType="int4" SFieldLength="0" SFieldScale="0" IsSelected="True" AutoInc="False">
+      <TField TFieldName="TZ_DAYLIGHT_MONTH" TFieldType="int4" TFieldLength="0" TFieldScale="0" IsKey="False" AllowNull="True" IsAutoInc="False"/>
+    </SField>
+    <SField SFieldName="TZ_DAYLIGHT_DOW" SFieldCreateName="TZ_DAYLIGHT_DOW" SFieldType="int4" SFieldLength="0" SFieldScale="0" IsSelected="True" AutoInc="False">
+      <TField TFieldName="TZ_DAYLIGHT_DOW" TFieldType="int4" TFieldLength="0" TFieldScale="0" IsKey="False" AllowNull="True" IsAutoInc="False"/>
+    </SField>
+    <SField SFieldName="TZ_DAYLIGHT_DAY" SFieldCreateName="TZ_DAYLIGHT_DAY" SFieldType="int4" SFieldLength="0" SFieldScale="0" IsSelected="True" AutoInc="False">
+      <TField TFieldName="TZ_DAYLIGHT_DAY" TFieldType="int4" TFieldLength="0" TFieldScale="0" IsKey="False" AllowNull="True" IsAutoInc="False"/>
+    </SField>
+    <SField SFieldName="TZ_DAYLIGHT_HOUR" SFieldCreateName="TZ_DAYLIGHT_HOUR" SFieldType="int4" SFieldLength="0" SFieldScale="0" IsSelected="True" AutoInc="False">
+      <TField TFieldName="TZ_DAYLIGHT_HOUR" TFieldType="int4" TFieldLength="0" TFieldScale="0" IsKey="False" AllowNull="True" IsAutoInc="False"/>
+    </SField>
+    <SField SFieldName="TZ_DAYLIGHT_MINUTE" SFieldCreateName="TZ_DAYLIGHT_MINUTE" SFieldType="int4" SFieldLength="0" SFieldScale="0" IsSelected="True" AutoInc="False">
+      <TField TFieldName="TZ_DAYLIGHT_MINUTE" TFieldType="int4" TFieldLength="0" TFieldScale="0" IsKey="False" AllowNull="True" IsAutoInc="False"/>
+    </SField>
+    <SField SFieldName="TZ_STANDARD_MONTH" SFieldCreateName="TZ_STANDARD_MONTH" SFieldType="int4" SFieldLength="0" SFieldScale="0" IsSelected="True" AutoInc="False">
+      <TField TFieldName="TZ_STANDARD_MONTH" TFieldType="int4" TFieldLength="0" TFieldScale="0" IsKey="False" AllowNull="True" IsAutoInc="False"/>
+    </SField>
+    <SField SFieldName="TZ_STANDARD_DOW" SFieldCreateName="TZ_STANDARD_DOW" SFieldType="int4" SFieldLength="0" SFieldScale="0" IsSelected="True" AutoInc="False">
+      <TField TFieldName="TZ_STANDARD_DOW" TFieldType="int4" TFieldLength="0" TFieldScale="0" IsKey="False" AllowNull="True" IsAutoInc="False"/>
+    </SField>
+    <SField SFieldName="TZ_STANDARD_DAY" SFieldCreateName="TZ_STANDARD_DAY" SFieldType="int4" SFieldLength="0" SFieldScale="0" IsSelected="True" AutoInc="False">
+      <TField TFieldName="TZ_STANDARD_DAY" TFieldType="int4" TFieldLength="0" TFieldScale="0" IsKey="False" AllowNull="True" IsAutoInc="False"/>
+    </SField>
+    <SField SFieldName="TZ_STANDARD_HOUR" SFieldCreateName="TZ_STANDARD_HOUR" SFieldType="int4" SFieldLength="0" SFieldScale="0" IsSelected="True" AutoInc="False">
+      <TField TFieldName="TZ_STANDARD_HOUR" TFieldType="int4" TFieldLength="0" TFieldScale="0" IsKey="False" AllowNull="True" IsAutoInc="False"/>
+    </SField>
+    <SField SFieldName="TZ_STANDARD_MINUTE" SFieldCreateName="TZ_STANDARD_MINUTE" SFieldType="int4" SFieldLength="0" SFieldScale="0" IsSelected="True" AutoInc="False">
+      <TField TFieldName="TZ_STANDARD_MINUTE" TFieldType="int4" TFieldLength="0" TFieldScale="0" IsKey="False" AllowNull="True" IsAutoInc="False"/>
+    </SField>
+    <SField SFieldName="CREATEUSERID" SFieldCreateName="CREATEUSERID" SFieldType="text" SFieldLength="0" SFieldScale="0" IsSelected="True" AutoInc="False">
+      <TField TFieldName="CREATEUSERID" TFieldType="text" TFieldLength="0" TFieldScale="0" IsKey="False" AllowNull="True" IsAutoInc="False"/>
+    </SField>
+    <SField SFieldName="CREATEDATE" SFieldCreateName="CREATEDATE" SFieldType="timestamp" SFieldLength="0" SFieldScale="0" IsSelected="True" AutoInc="False">
+      <TField TFieldName="CREATEDATE" TFieldType="timestamp" TFieldLength="0" TFieldScale="0" IsKey="False" AllowNull="True" IsAutoInc="False"/>
+    </SField>
+    <SField SFieldName="EDITUSERID" SFieldCreateName="EDITUSERID" SFieldType="text" SFieldLength="0" SFieldScale="0" IsSelected="True" AutoInc="False">
+      <TField TFieldName="EDITUSERID" TFieldType="text" TFieldLength="0" TFieldScale="0" IsKey="False" AllowNull="True" IsAutoInc="False"/>
+    </SField>
+    <SField SFieldName="EDITDATE" SFieldCreateName="EDITDATE" SFieldType="timestamp" SFieldLength="0" SFieldScale="0" IsSelected="True" AutoInc="False">
+      <TField TFieldName="EDITDATE" TFieldType="timestamp" TFieldLength="0" TFieldScale="0" IsKey="False" AllowNull="True" IsAutoInc="False"/>
+    </SField>
+    <SField SFieldName="DURATION" SFieldCreateName="DURATION" SFieldType="int4" SFieldLength="0" SFieldScale="0" IsSelected="True" AutoInc="False">
+      <TField TFieldName="DURATION" TFieldType="int4" TFieldLength="0" TFieldScale="0" IsKey="False" AllowNull="True" IsAutoInc="False"/>
+    </SField>
+  </STable>
+  <STable SSchemaName="dbo" STableName="TBL_ACTIVITYTYPE" TTableName="TBL_ACTIVITYTYPE" IsNewTable="True" ConditionQuery="" Query="" SourceFile="">
+    <SField SFieldName="ACTIVITYTYPEGUID" SFieldCreateName="ACTIVITYTYPEGUID" SFieldType="text" SFieldLength="0" SFieldScale="0" IsSelected="True" AutoInc="False">
+      <TField TFieldName="ACTIVITYTYPEGUID" TFieldType="text" TFieldLength="0" TFieldScale="0" IsKey="False" AllowNull="True" IsAutoInc="False"/>
+    </SField>
+    <SField SFieldName="ACTIVITYTYPEID" SFieldCreateName="ACTIVITYTYPEID" SFieldType="int2" SFieldLength="0" SFieldScale="0" IsSelected="True" AutoInc="False">
+      <TField TFieldName="ACTIVITYTYPEID" TFieldType="int2" TFieldLength="0" TFieldScale="0" IsKey="False" AllowNull="True" IsAutoInc="False"/>
+    </SField>
+    <SField SFieldName="NAME" SFieldCreateName="NAME" SFieldType="varchar" SFieldLength="64" SFieldScale="0" IsSelected="True" AutoInc="False">
+      <TField TFieldName="NAME" TFieldType="varchar" TFieldLength="64" TFieldScale="0" IsKey="False" AllowNull="True" IsAutoInc="False"/>
+    </SField>
+    <SField SFieldName="DESCRIPTION" SFieldCreateName="DESCRIPTION" SFieldType="varchar" SFieldLength="128" SFieldScale="0" IsSelected="True" AutoInc="False">
+      <TField TFieldName="DESCRIPTION" TFieldType="varchar" TFieldLength="128" TFieldScale="0" IsKey="False" AllowNull="True" IsAutoInc="False"/>
+    </SField>
+    <SField SFieldName="ISACTIVE" SFieldCreateName="ISACTIVE" SFieldType="bool" SFieldLength="0" SFieldScale="0" IsSelected="True" AutoInc="False">
+      <TField TFieldName="ISACTIVE" TFieldType="bool" TFieldLength="0" TFieldScale="0" IsKey="False" AllowNull="True" IsAutoInc="False"/>
+    </SField>
+    <SField SFieldName="ISCUSTOM" SFieldCreateName="ISCUSTOM" SFieldType="bool" SFieldLength="0" SFieldScale="0" IsSelected="True" AutoInc="False">
+      <TField TFieldName="ISCUSTOM" TFieldType="bool" TFieldLength="0" TFieldScale="0" IsKey="False" AllowNull="True" IsAutoInc="False"/>
+    </SField>
+    <SField SFieldName="REGARDING_PICKLISTID" SFieldCreateName="REGARDING_PICKLISTID" SFieldType="text" SFieldLength="0" SFieldScale="0" IsSelected="True" AutoInc="False">
+      <TField TFieldName="REGARDING_PICKLISTID" TFieldType="text" TFieldLength="0" TFieldScale="0" IsKey="False" AllowNull="True" IsAutoInc="False"/>
+    </SField>
+    <SField SFieldName="TYPEIMAGE" SFieldCreateName="TYPEIMAGE" SFieldType="bytea" SFieldLength="0" SFieldScale="0" IsSelected="True" AutoInc="False">
+      <TField TFieldName="TYPEIMAGE" TFieldType="bytea" TFieldLength="0" TFieldScale="0" IsKey="False" AllowNull="True" IsAutoInc="False"/>
+    </SField>
+    <SField SFieldName="CREATEUSERID" SFieldCreateName="CREATEUSERID" SFieldType="text" SFieldLength="0" SFieldScale="0" IsSelected="True" AutoInc="False">
+      <TField TFieldName="CREATEUSERID" TFieldType="text" TFieldLength="0" TFieldScale="0" IsKey="False" AllowNull="True" IsAutoInc="False"/>
+    </SField>
+    <SField SFieldName="CREATEDATE" SFieldCreateName="CREATEDATE" SFieldType="timestamp" SFieldLength="0" SFieldScale="0" IsSelected="True" AutoInc="False">
+      <TField TFieldName="CREATEDATE" TFieldType="timestamp" TFieldLength="0" TFieldScale="0" IsKey="False" AllowNull="True" IsAutoInc="False"/>
+    </SField>
+    <SField SFieldName="EDITUSERID" SFieldCreateName="EDITUSERID" SFieldType="text" SFieldLength="0" SFieldScale="0" IsSelected="True" AutoInc="False">
+      <TField TFieldName="EDITUSERID" TFieldType="text" TFieldLength="0" TFieldScale="0" IsKey="False" AllowNull="True" IsAutoInc="False"/>
+    </SField>
+    <SField SFieldName="EDITDATE" SFieldCreateName="EDITDATE" SFieldType="timestamp" SFieldLength="0" SFieldScale="0" IsSelected="True" AutoInc="False">
+      <TField TFieldName="EDITDATE" TFieldType="timestamp" TFieldLength="0" TFieldScale="0" IsKey="False" AllowNull="True" IsAutoInc="False"/>
+    </SField>
+  </STable>
+  <STable SSchemaName="dbo" STableName="TBL_ADDRESS" TTableName="TBL_ADDRESS" IsNewTable="True" ConditionQuery="" Query="" SourceFile="">
+    <SField SFieldName="ADDRESSID" SFieldCreateName="ADDRESSID" SFieldType="text" SFieldLength="0" SFieldScale="0" IsSelected="True" AutoInc="False">
+      <TField TFieldName="ADDRESSID" TFieldType="text" TFieldLength="0" TFieldScale="0" IsKey="False" AllowNull="True" IsAutoInc="False"/>
+    </SField>
+    <SField SFieldName="TYPEID" SFieldCreateName="TYPEID" SFieldType="text" SFieldLength="0" SFieldScale="0" IsSelected="True" AutoInc="False">
+      <TField TFieldName="TYPEID" TFieldType="text" TFieldLength="0" TFieldScale="0" IsKey="False" AllowNull="True" IsAutoInc="False"/>
+    </SField>
+    <SField SFieldName="CONTACTID" SFieldCreateName="CONTACTID" SFieldType="text" SFieldLength="0" SFieldScale="0" IsSelected="True" AutoInc="False">
+      <TField TFieldName="CONTACTID" TFieldType="text" TFieldLength="0" TFieldScale="0" IsKey="False" AllowNull="True" IsAutoInc="False"/>
+    </SField>
+    <SField SFieldName="COMPANYID" SFieldCreateName="COMPANYID" SFieldType="text" SFieldLength="0" SFieldScale="0" IsSelected="True" AutoInc="False">
+      <TField TFieldName="COMPANYID" TFieldType="text" TFieldLength="0" TFieldScale="0" IsKey="False" AllowNull="True" IsAutoInc="False"/>
+    </SField>
+    <SField SFieldName="GROUPID" SFieldCreateName="GROUPID" SFieldType="text" SFieldLength="0" SFieldScale="0" IsSelected="True" AutoInc="False">
+      <TField TFieldName="GROUPID" TFieldType="text" TFieldLength="0" TFieldScale="0" IsKey="False" AllowNull="True" IsAutoInc="False"/>
+    </SField>
+    <SField SFieldName="LINE1" SFieldCreateName="LINE1" SFieldType="varchar" SFieldLength="256" SFieldScale="0" IsSelected="True" AutoInc="False">
+      <TField TFieldName="LINE1" TFieldType="varchar" TFieldLength="256" TFieldScale="0" IsKey="False" AllowNull="True" IsAutoInc="False"/>
+    </SField>
+    <SField SFieldName="LINE2" SFieldCreateName="LINE2" SFieldType="varchar" SFieldLength="256" SFieldScale="0" IsSelected="True" AutoInc="False">
+      <TField TFieldName="LINE2" TFieldType="varchar" TFieldLength="256" TFieldScale="0" IsKey="False" AllowNull="True" IsAutoInc="False"/>
+    </SField>
+    <SField SFieldName="LINE3" SFieldCreateName="LINE3" SFieldType="varchar" SFieldLength="256" SFieldScale="0" IsSelected="True" AutoInc="False">
+      <TField TFieldName="LINE3" TFieldType="varchar" TFieldLength="256" TFieldScale="0" IsKey="False" AllowNull="True" IsAutoInc="False"/>
+    </SField>
+    <SField SFieldName="CITY" SFieldCreateName="CITY" SFieldType="varchar" SFieldLength="256" SFieldScale="0" IsSelected="True" AutoInc="False">
+      <TField TFieldName="CITY" TFieldType="varchar" TFieldLength="256" TFieldScale="0" IsKey="False" AllowNull="True" IsAutoInc="False"/>
+    </SField>
+    <SField SFieldName="STATE" SFieldCreateName="STATE" SFieldType="varchar" SFieldLength="256" SFieldScale="0" IsSelected="True" AutoInc="False">
+      <TField TFieldName="STATE" TFieldType="varchar" TFieldLength="256" TFieldScale="0" IsKey="False" AllowNull="True" IsAutoInc="False"/>
+    </SField>
+    <SField SFieldName="POSTALCODE" SFieldCreateName="POSTALCODE" SFieldType="varchar" SFieldLength="256" SFieldScale="0" IsSelected="True" AutoInc="False">
+      <TField TFieldName="POSTALCODE" TFieldType="varchar" TFieldLength="256" TFieldScale="0" IsKey="False" AllowNull="True" IsAutoInc="False"/>
+    </SField>
+    <SField SFieldName="COUNTRYNAME" SFieldCreateName="COUNTRYNAME" SFieldType="varchar" SFieldLength="256" SFieldScale="0" IsSelected="True" AutoInc="False">
+      <TField TFieldName="COUNTRYNAME" TFieldType="varchar" TFieldLength="256" TFieldScale="0" IsKey="False" AllowNull="True" IsAutoInc="False"/>
+    </SField>
+  </STable>
+  <STable SSchemaName="dbo" STableName="TBL_COMPANY" TTableName="TBL_COMPANY" IsNewTable="True" ConditionQuery="" Query="" SourceFile="">
+    <SField SFieldName="COMPANYID" SFieldCreateName="COMPANYID" SFieldType="text" SFieldLength="0" SFieldScale="0" IsSelected="True" AutoInc="False">
+      <TField TFieldName="COMPANYID" TFieldType="text" TFieldLength="0" TFieldScale="0" IsKey="False" AllowNull="True" IsAutoInc="False"/>
+    </SField>
+    <SField SFieldName="NAME" SFieldCreateName="NAME" SFieldType="varchar" SFieldLength="128" SFieldScale="0" IsSelected="True" AutoInc="False">
+      <TField TFieldName="NAME" TFieldType="varchar" TFieldLength="128" TFieldScale="0" IsKey="False" AllowNull="True" IsAutoInc="False"/>
+    </SField>
+    <SField SFieldName="DESCRIPTION" SFieldCreateName="DESCRIPTION" SFieldType="varchar" SFieldLength="128" SFieldScale="0" IsSelected="True" AutoInc="False">
+      <TField TFieldName="DESCRIPTION" TFieldType="varchar" TFieldLength="128" TFieldScale="0" IsKey="False" AllowNull="True" IsAutoInc="False"/>
+    </SField>
+    <SField SFieldName="CATEGORY" SFieldCreateName="CATEGORY" SFieldType="varchar" SFieldLength="128" SFieldScale="0" IsSelected="True" AutoInc="False">
+      <TField TFieldName="CATEGORY" TFieldType="varchar" TFieldLength="128" TFieldScale="0" IsKey="False" AllowNull="True" IsAutoInc="False"/>
+    </SField>
+    <SField SFieldName="REFERREDBY" SFieldCreateName="REFERREDBY" SFieldType="varchar" SFieldLength="64" SFieldScale="0" IsSelected="True" AutoInc="False">
+      <TField TFieldName="REFERREDBY" TFieldType="varchar" TFieldLength="64" TFieldScale="0" IsKey="False" AllowNull="True" IsAutoInc="False"/>
+    </SField>
+    <SField SFieldName="TICKERSYMBOL" SFieldCreateName="TICKERSYMBOL" SFieldType="varchar" SFieldLength="12" SFieldScale="0" IsSelected="True" AutoInc="False">
+      <TField TFieldName="TICKERSYMBOL" TFieldType="varchar" TFieldLength="12" TFieldScale="0" IsKey="False" AllowNull="True" IsAutoInc="False"/>
+    </SField>
+    <SField SFieldName="NUMEMPLOYEES" SFieldCreateName="NUMEMPLOYEES" SFieldType="int4" SFieldLength="0" SFieldScale="0" IsSelected="True" AutoInc="False">
+      <TField TFieldName="NUMEMPLOYEES" TFieldType="int4" TFieldLength="0" TFieldScale="0" IsKey="False" AllowNull="True" IsAutoInc="False"/>
+    </SField>
+    <SField SFieldName="INDUSTRY" SFieldCreateName="INDUSTRY" SFieldType="varchar" SFieldLength="64" SFieldScale="0" IsSelected="True" AutoInc="False">
+      <TField TFieldName="INDUSTRY" TFieldType="varchar" TFieldLength="64" TFieldScale="0" IsKey="False" AllowNull="True" IsAutoInc="False"/>
+    </SField>
+    <SField SFieldName="SICCODE" SFieldCreateName="SICCODE" SFieldType="varchar" SFieldLength="8" SFieldScale="0" IsSelected="True" AutoInc="False">
+      <TField TFieldName="SICCODE" TFieldType="varchar" TFieldLength="8" TFieldScale="0" IsKey="False" AllowNull="True" IsAutoInc="False"/>
+    </SField>
+    <SField SFieldName="REVENUE" SFieldCreateName="REVENUE" SFieldType="float8" SFieldLength="0" SFieldScale="0" IsSelected="True" AutoInc="False">
+      <TField TFieldName="REVENUE" TFieldType="float8" TFieldLength="0" TFieldScale="0" IsKey="False" AllowNull="True" IsAutoInc="False"/>
+    </SField>
+    <SField SFieldName="TERRITORY" SFieldCreateName="TERRITORY" SFieldType="varchar" SFieldLength="64" SFieldScale="0" IsSelected="True" AutoInc="False">
+      <TField TFieldName="TERRITORY" TFieldType="varchar" TFieldLength="64" TFieldScale="0" IsKey="False" AllowNull="True" IsAutoInc="False"/>
+    </SField>
+    <SField SFieldName="REGION" SFieldCreateName="REGION" SFieldType="varchar" SFieldLength="64" SFieldScale="0" IsSelected="True" AutoInc="False">
+      <TField TFieldName="REGION" TFieldType="varchar" TFieldLength="64" TFieldScale="0" IsKey="False" AllowNull="True" IsAutoInc="False"/>
+    </SField>
+    <SField SFieldName="DIVISION" SFieldCreateName="DIVISION" SFieldType="varchar" SFieldLength="64" SFieldScale="0" IsSelected="True" AutoInc="False">
+      <TField TFieldName="DIVISION" TFieldType="varchar" TFieldLength="64" TFieldScale="0" IsKey="False" AllowNull="True" IsAutoInc="False"/>
+    </SField>
+    <SField SFieldName="WEBADDRESS" SFieldCreateName="WEBADDRESS" SFieldType="varchar" SFieldLength="128" SFieldScale="0" IsSelected="True" AutoInc="False">
+      <TField TFieldName="WEBADDRESS" TFieldType="varchar" TFieldLength="128" TFieldScale="0" IsKey="False" AllowNull="True" IsAutoInc="False"/>
+    </SField>
+    <SField SFieldName="HIERLEVEL" SFieldCreateName="HIERLEVEL" SFieldType="int4" SFieldLength="0" SFieldScale="0" IsSelected="True" AutoInc="False">
+      <TField TFieldName="HIERLEVEL" TFieldType="int4" TFieldLength="0" TFieldScale="0" IsKey="False" AllowNull="True" IsAutoInc="False"/>
+    </SField>
+    <SField SFieldName="HIERPATH" SFieldCreateName="HIERPATH" SFieldType="varchar" SFieldLength="556" SFieldScale="0" IsSelected="True" AutoInc="False">
+      <TField TFieldName="HIERPATH" TFieldType="varchar" TFieldLength="556" TFieldScale="0" IsKey="False" AllowNull="True" IsAutoInc="False"/>
+    </SField>
+    <SField SFieldName="HASSUBCOMPANY" SFieldCreateName="HASSUBCOMPANY" SFieldType="bool" SFieldLength="0" SFieldScale="0" IsSelected="True" AutoInc="False">
+      <TField TFieldName="HASSUBCOMPANY" TFieldType="bool" TFieldLength="0" TFieldScale="0" IsKey="False" AllowNull="True" IsAutoInc="False"/>
+    </SField>
+    <SField SFieldName="CONTACTQUERYTEXT" SFieldCreateName="CONTACTQUERYTEXT" SFieldType="text" SFieldLength="0" SFieldScale="0" IsSelected="True" AutoInc="False">
+      <TField TFieldName="CONTACTQUERYTEXT" TFieldType="text" TFieldLength="0" TFieldScale="0" IsKey="False" AllowNull="True" IsAutoInc="False"/>
+    </SField>
+    <SField SFieldName="OPPQUERYTEXT" SFieldCreateName="OPPQUERYTEXT" SFieldType="text" SFieldLength="0" SFieldScale="0" IsSelected="True" AutoInc="False">
+      <TField TFieldName="OPPQUERYTEXT" TFieldType="text" TFieldLength="0" TFieldScale="0" IsKey="False" AllowNull="True" IsAutoInc="False"/>
+    </SField>
+    <SField SFieldName="QUERYVERSIONID" SFieldCreateName="QUERYVERSIONID" SFieldType="text" SFieldLength="0" SFieldScale="0" IsSelected="True" AutoInc="False">
+      <TField TFieldName="QUERYVERSIONID" TFieldType="text" TFieldLength="0" TFieldScale="0" IsKey="False" AllowNull="True" IsAutoInc="False"/>
+    </SField>
+    <SField SFieldName="PARENTCOMPANYID" SFieldCreateName="PARENTCOMPANYID" SFieldType="text" SFieldLength="0" SFieldScale="0" IsSelected="True" AutoInc="False">
+      <TField TFieldName="PARENTCOMPANYID" TFieldType="text" TFieldLength="0" TFieldScale="0" IsKey="False" AllowNull="True" IsAutoInc="False"/>
+    </SField>
+    <SField SFieldName="MANAGEUSERID" SFieldCreateName="MANAGEUSERID" SFieldType="text" SFieldLength="0" SFieldScale="0" IsSelected="True" AutoInc="False">
+      <TField TFieldName="MANAGEUSERID" TFieldType="text" TFieldLength="0" TFieldScale="0" IsKey="False" AllowNull="True" IsAutoInc="False"/>
+    </SField>
+    <SField SFieldName="CREATEUSERID" SFieldCreateName="CREATEUSERID" SFieldType="text" SFieldLength="0" SFieldScale="0" IsSelected="True" AutoInc="False">
+      <TField TFieldName="CREATEUSERID" TFieldType="text" TFieldLength="0" TFieldScale="0" IsKey="False" AllowNull="True" IsAutoInc="False"/>
+    </SField>
+    <SField SFieldName="CREATEDATE" SFieldCreateName="CREATEDATE" SFieldType="timestamp" SFieldLength="0" SFieldScale="0" IsSelected="True" AutoInc="False">
+      <TField TFieldName="CREATEDATE" TFieldType="timestamp" TFieldLength="0" TFieldScale="0" IsKey="False" AllowNull="True" IsAutoInc="False"/>
+    </SField>
+    <SField SFieldName="EDITUSERID" SFieldCreateName="EDITUSERID" SFieldType="text" SFieldLength="0" SFieldScale="0" IsSelected="True" AutoInc="False">
+      <TField TFieldName="EDITUSERID" TFieldType="text" TFieldLength="0" TFieldScale="0" IsKey="False" AllowNull="True" IsAutoInc="False"/>
+    </SField>
+    <SField SFieldName="EDITDATE" SFieldCreateName="EDITDATE" SFieldType="timestamp" SFieldLength="0" SFieldScale="0" IsSelected="True" AutoInc="False">
+      <TField TFieldName="EDITDATE" TFieldType="timestamp" TFieldLength="0" TFieldScale="0" IsKey="False" AllowNull="True" IsAutoInc="False"/>
+    </SField>
+    <SField SFieldName="ISPRIVATE" SFieldCreateName="ISPRIVATE" SFieldType="bool" SFieldLength="0" SFieldScale="0" IsSelected="True" AutoInc="False">
+      <TField TFieldName="ISPRIVATE" TFieldType="bool" TFieldLength="0" TFieldScale="0" IsKey="False" AllowNull="True" IsAutoInc="False"/>
+    </SField>
+    <SField SFieldName="IMPORTDATE" SFieldCreateName="IMPORTDATE" SFieldType="timestamp" SFieldLength="0" SFieldScale="0" IsSelected="True" AutoInc="False">
+      <TField TFieldName="IMPORTDATE" TFieldType="timestamp" TFieldLength="0" TFieldScale="0" IsKey="False" AllowNull="True" IsAutoInc="False"/>
+    </SField>
+  </STable>
+  <STable SSchemaName="dbo" STableName="TBL_COMPANY_ACTIVITY" TTableName="TBL_COMPANY_ACTIVITY" IsNewTable="True" ConditionQuery="" Query="" SourceFile="">
+    <SField SFieldName="COMPANYID" SFieldCreateName="COMPANYID" SFieldType="text" SFieldLength="0" SFieldScale="0" IsSelected="True" AutoInc="False">
+      <TField TFieldName="COMPANYID" TFieldType="text" TFieldLength="0" TFieldScale="0" IsKey="False" AllowNull="True" IsAutoInc="False"/>
+    </SField>
+    <SField SFieldName="ACTIVITYID" SFieldCreateName="ACTIVITYID" SFieldType="text" SFieldLength="0" SFieldScale="0" IsSelected="True" AutoInc="False">
+      <TField TFieldName="ACTIVITYID" TFieldType="text" TFieldLength="0" TFieldScale="0" IsKey="False" AllowNull="True" IsAutoInc="False"/>
+    </SField>
+  </STable>
+  <STable SSchemaName="dbo" STableName="TBL_COMPANY_HISTORY" TTableName="TBL_COMPANY_HISTORY" IsNewTable="True" ConditionQuery="" Query="" SourceFile="">
+    <SField SFieldName="COMPANYID" SFieldCreateName="COMPANYID" SFieldType="text" SFieldLength="0" SFieldScale="0" IsSelected="True" AutoInc="False">
+      <TField TFieldName="COMPANYID" TFieldType="text" TFieldLength="0" TFieldScale="0" IsKey="False" AllowNull="True" IsAutoInc="False"/>
+    </SField>
+    <SField SFieldName="HISTORYID" SFieldCreateName="HISTORYID" SFieldType="text" SFieldLength="0" SFieldScale="0" IsSelected="True" AutoInc="False">
+      <TField TFieldName="HISTORYID" TFieldType="text" TFieldLength="0" TFieldScale="0" IsKey="False" AllowNull="True" IsAutoInc="False"/>
+    </SField>
+  </STable>
+  <STable SSchemaName="dbo" STableName="TBL_COMPANY_NOTE" TTableName="TBL_COMPANY_NOTE" IsNewTable="True" ConditionQuery="" Query="" SourceFile="">
+    <SField SFieldName="COMPANYID" SFieldCreateName="COMPANYID" SFieldType="text" SFieldLength="0" SFieldScale="0" IsSelected="True" AutoInc="False">
+      <TField TFieldName="COMPANYID" TFieldType="text" TFieldLength="0" TFieldScale="0" IsKey="False" AllowNull="True" IsAutoInc="False"/>
+    </SField>
+    <SField SFieldName="NOTEID" SFieldCreateName="NOTEID" SFieldType="text" SFieldLength="0" SFieldScale="0" IsSelected="True" AutoInc="False">
+      <TField TFieldName="NOTEID" TFieldType="text" TFieldLength="0" TFieldScale="0" IsKey="False" AllowNull="True" IsAutoInc="False"/>
+    </SField>
+  </STable>
+  <STable SSchemaName="dbo" STableName="TBL_CONTACT" TTableName="TBL_CONTACT" IsNewTable="True" ConditionQuery="" Query="" SourceFile="">
+    <SField SFieldName="CONTACTID" SFieldCreateName="CONTACTID" SFieldType="text" SFieldLength="0" SFieldScale="0" IsSelected="True" AutoInc="False">
+      <TField TFieldName="CONTACTID" TFieldType="text" TFieldLength="0" TFieldScale="0" IsKey="False" AllowNull="True" IsAutoInc="False"/>
+    </SField>
+    <SField SFieldName="TYPENUM" SFieldCreateName="TYPENUM" SFieldType="int4" SFieldLength="0" SFieldScale="0" IsSelected="True" AutoInc="False">
+      <TField TFieldName="TYPENUM" TFieldType="int4" TFieldLength="0" TFieldScale="0" IsKey="False" AllowNull="True" IsAutoInc="False"/>
+    </SField>
+    <SField SFieldName="LASTNAME" SFieldCreateName="LASTNAME" SFieldType="varchar" SFieldLength="128" SFieldScale="0" IsSelected="True" AutoInc="False">
+      <TField TFieldName="LASTNAME" TFieldType="varchar" TFieldLength="128" TFieldScale="0" IsKey="False" AllowNull="True" IsAutoInc="False"/>
+    </SField>
+    <SField SFieldName="FIRSTNAME" SFieldCreateName="FIRSTNAME" SFieldType="varchar" SFieldLength="64" SFieldScale="0" IsSelected="True" AutoInc="False">
+      <TField TFieldName="FIRSTNAME" TFieldType="varchar" TFieldLength="64" TFieldScale="0" IsKey="False" AllowNull="True" IsAutoInc="False"/>
+    </SField>
+    <SField SFieldName="MIDDLENAME" SFieldCreateName="MIDDLENAME" SFieldType="varchar" SFieldLength="64" SFieldScale="0" IsSelected="True" AutoInc="False">
+      <TField TFieldName="MIDDLENAME" TFieldType="varchar" TFieldLength="64" TFieldScale="0" IsKey="False" AllowNull="True" IsAutoInc="False"/>
+    </SField>
+    <SField SFieldName="NAMEPREFIX" SFieldCreateName="NAMEPREFIX" SFieldType="varchar" SFieldLength="32" SFieldScale="0" IsSelected="True" AutoInc="False">
+      <TField TFieldName="NAMEPREFIX" TFieldType="varchar" TFieldLength="32" TFieldScale="0" IsKey="False" AllowNull="True" IsAutoInc="False"/>
+    </SField>
+    <SField SFieldName="NAMESUFFIX" SFieldCreateName="NAMESUFFIX" SFieldType="varchar" SFieldLength="32" SFieldScale="0" IsSelected="True" AutoInc="False">
+      <TField TFieldName="NAMESUFFIX" TFieldType="varchar" TFieldLength="32" TFieldScale="0" IsKey="False" AllowNull="True" IsAutoInc="False"/>
+    </SField>
+    <SField SFieldName="SALUTATION" SFieldCreateName="SALUTATION" SFieldType="varchar" SFieldLength="32" SFieldScale="0" IsSelected="True" AutoInc="False">
+      <TField TFieldName="SALUTATION" TFieldType="varchar" TFieldLength="32" TFieldScale="0" IsKey="False" AllowNull="True" IsAutoInc="False"/>
+    </SField>
+    <SField SFieldName="FULLNAME" SFieldCreateName="FULLNAME" SFieldType="varchar" SFieldLength="128" SFieldScale="0" IsSelected="True" AutoInc="False">
+      <TField TFieldName="FULLNAME" TFieldType="varchar" TFieldLength="128" TFieldScale="0" IsKey="False" AllowNull="True" IsAutoInc="False"/>
+    </SField>
+    <SField SFieldName="CATEGORY" SFieldCreateName="CATEGORY" SFieldType="varchar" SFieldLength="128" SFieldScale="0" IsSelected="True" AutoInc="False">
+      <TField TFieldName="CATEGORY" TFieldType="varchar" TFieldLength="128" TFieldScale="0" IsKey="False" AllowNull="True" IsAutoInc="False"/>
+    </SField>
+    <SField SFieldName="ISPRIVATE" SFieldCreateName="ISPRIVATE" SFieldType="bool" SFieldLength="0" SFieldScale="0" IsSelected="True" AutoInc="False">
+      <TField TFieldName="ISPRIVATE" TFieldType="bool" TFieldLength="0" TFieldScale="0" IsKey="False" AllowNull="True" IsAutoInc="False"/>
+    </SField>
+    <SField SFieldName="ISIMPORTED" SFieldCreateName="ISIMPORTED" SFieldType="bool" SFieldLength="0" SFieldScale="0" IsSelected="True" AutoInc="False">
+      <TField TFieldName="ISIMPORTED" TFieldType="bool" TFieldLength="0" TFieldScale="0" IsKey="False" AllowNull="True" IsAutoInc="False"/>
+    </SField>
+    <SField SFieldName="JOBTITLE" SFieldCreateName="JOBTITLE" SFieldType="varchar" SFieldLength="128" SFieldScale="0" IsSelected="True" AutoInc="False">
+      <TField TFieldName="JOBTITLE" TFieldType="varchar" TFieldLength="128" TFieldScale="0" IsKey="False" AllowNull="True" IsAutoInc="False"/>
+    </SField>
+    <SField SFieldName="DEPARTMENT" SFieldCreateName="DEPARTMENT" SFieldType="varchar" SFieldLength="128" SFieldScale="0" IsSelected="True" AutoInc="False">
+      <TField TFieldName="DEPARTMENT" TFieldType="varchar" TFieldLength="128" TFieldScale="0" IsKey="False" AllowNull="True" IsAutoInc="False"/>
+    </SField>
+    <SField SFieldName="COMPANYID" SFieldCreateName="COMPANYID" SFieldType="text" SFieldLength="0" SFieldScale="0" IsSelected="True" AutoInc="False">
+      <TField TFieldName="COMPANYID" TFieldType="text" TFieldLength="0" TFieldScale="0" IsKey="False" AllowNull="True" IsAutoInc="False"/>
+    </SField>
+    <SField SFieldName="COMPANYNAME" SFieldCreateName="COMPANYNAME" SFieldType="varchar" SFieldLength="128" SFieldScale="0" IsSelected="True" AutoInc="False">
+      <TField TFieldName="COMPANYNAME" TFieldType="varchar" TFieldLength="128" TFieldScale="0" IsKey="False" AllowNull="True" IsAutoInc="False"/>
+    </SField>
+    <SField SFieldName="CONTACTWEBADDRESS" SFieldCreateName="CONTACTWEBADDRESS" SFieldType="varchar" SFieldLength="128" SFieldScale="0" IsSelected="True" AutoInc="False">
+      <TField TFieldName="CONTACTWEBADDRESS" TFieldType="varchar" TFieldLength="128" TFieldScale="0" IsKey="False" AllowNull="True" IsAutoInc="False"/>
+    </SField>
+    <SField SFieldName="LASTMEETDATE" SFieldCreateName="LASTMEETDATE" SFieldType="timestamp" SFieldLength="0" SFieldScale="0" IsSelected="True" AutoInc="False">
+      <TField TFieldName="LASTMEETDATE" TFieldType="timestamp" TFieldLength="0" TFieldScale="0" IsKey="False" AllowNull="True" IsAutoInc="False"/>
+    </SField>
+    <SField SFieldName="LASTREACHDATE" SFieldCreateName="LASTREACHDATE" SFieldType="timestamp" SFieldLength="0" SFieldScale="0" IsSelected="True" AutoInc="False">
+      <TField TFieldName="LASTREACHDATE" TFieldType="timestamp" TFieldLength="0" TFieldScale="0" IsKey="False" AllowNull="True" IsAutoInc="False"/>
+    </SField>
+    <SField SFieldName="LASTATTEMPTDATE" SFieldCreateName="LASTATTEMPTDATE" SFieldType="timestamp" SFieldLength="0" SFieldScale="0" IsSelected="True" AutoInc="False">
+      <TField TFieldName="LASTATTEMPTDATE" TFieldType="timestamp" TFieldLength="0" TFieldScale="0" IsKey="False" AllowNull="True" IsAutoInc="False"/>
+    </SField>
+    <SField SFieldName="LASTLETTERDATE" SFieldCreateName="LASTLETTERDATE" SFieldType="timestamp" SFieldLength="0" SFieldScale="0" IsSelected="True" AutoInc="False">
+      <TField TFieldName="LASTLETTERDATE" TFieldType="timestamp" TFieldLength="0" TFieldScale="0" IsKey="False" AllowNull="True" IsAutoInc="False"/>
+    </SField>
+    <SField SFieldName="LASTRESULTS" SFieldCreateName="LASTRESULTS" SFieldType="varchar" SFieldLength="128" SFieldScale="0" IsSelected="True" AutoInc="False">
+      <TField TFieldName="LASTRESULTS" TFieldType="varchar" TFieldLength="128" TFieldScale="0" IsKey="False" AllowNull="True" IsAutoInc="False"/>
+    </SField>
+    <SField SFieldName="REFERREDBY" SFieldCreateName="REFERREDBY" SFieldType="varchar" SFieldLength="64" SFieldScale="0" IsSelected="True" AutoInc="False">
+      <TField TFieldName="REFERREDBY" TFieldType="varchar" TFieldLength="64" TFieldScale="0" IsKey="False" AllowNull="True" IsAutoInc="False"/>
+    </SField>
+    <SField SFieldName="SPOUSENAME" SFieldCreateName="SPOUSENAME" SFieldType="varchar" SFieldLength="64" SFieldScale="0" IsSelected="True" AutoInc="False">
+      <TField TFieldName="SPOUSENAME" TFieldType="varchar" TFieldLength="64" TFieldScale="0" IsKey="False" AllowNull="True" IsAutoInc="False"/>
+    </SField>
+    <SField SFieldName="BIRTHDATE" SFieldCreateName="BIRTHDATE" SFieldType="timestamp" SFieldLength="0" SFieldScale="0" IsSelected="True" AutoInc="False">
+      <TField TFieldName="BIRTHDATE" TFieldType="timestamp" TFieldLength="0" TFieldScale="0" IsKey="False" AllowNull="True" IsAutoInc="False"/>
+    </SField>
+    <SField SFieldName="INSTANTMSGID" SFieldCreateName="INSTANTMSGID" SFieldType="varchar" SFieldLength="16" SFieldScale="0" IsSelected="True" AutoInc="False">
+      <TField TFieldName="INSTANTMSGID" TFieldType="varchar" TFieldLength="16" TFieldScale="0" IsKey="False" AllowNull="True" IsAutoInc="False"/>
+    </SField>
+    <SField SFieldName="USER1" SFieldCreateName="USER1" SFieldType="varchar" SFieldLength="64" SFieldScale="0" IsSelected="True" AutoInc="False">
+      <TField TFieldName="USER1" TFieldType="varchar" TFieldLength="64" TFieldScale="0" IsKey="False" AllowNull="True" IsAutoInc="False"/>
+    </SField>
+    <SField SFieldName="USER2" SFieldCreateName="USER2" SFieldType="varchar" SFieldLength="64" SFieldScale="0" IsSelected="True" AutoInc="False">
+      <TField TFieldName="USER2" TFieldType="varchar" TFieldLength="64" TFieldScale="0" IsKey="False" AllowNull="True" IsAutoInc="False"/>
+    </SField>
+    <SField SFieldName="USER3" SFieldCreateName="USER3" SFieldType="varchar" SFieldLength="64" SFieldScale="0" IsSelected="True" AutoInc="False">
+      <TField TFieldName="USER3" TFieldType="varchar" TFieldLength="64" TFieldScale="0" IsKey="False" AllowNull="True" IsAutoInc="False"/>
+    </SField>
+    <SField SFieldName="USER4" SFieldCreateName="USER4" SFieldType="varchar" SFieldLength="64" SFieldScale="0" IsSelected="True" AutoInc="False">
+      <TField TFieldName="USER4" TFieldType="varchar" TFieldLength="64" TFieldScale="0" IsKey="False" AllowNull="True" IsAutoInc="False"/>
+    </SField>
+    <SField SFieldName="USER5" SFieldCreateName="USER5" SFieldType="varchar" SFieldLength="64" SFieldScale="0" IsSelected="True" AutoInc="False">
+      <TField TFieldName="USER5" TFieldType="varchar" TFieldLength="64" TFieldScale="0" IsKey="False" AllowNull="True" IsAutoInc="False"/>
+    </SField>
+    <SField SFieldName="USER6" SFieldCreateName="USER6" SFieldType="varchar" SFieldLength="64" SFieldScale="0" IsSelected="True" AutoInc="False">
+      <TField TFieldName="USER6" TFieldType="varchar" TFieldLength="64" TFieldScale="0" IsKey="False" AllowNull="True" IsAutoInc="False"/>
+    </SField>
+    <SField SFieldName="USER7" SFieldCreateName="USER7" SFieldType="varchar" SFieldLength="75" SFieldScale="0" IsSelected="True" AutoInc="False">
+      <TField TFieldName="USER7" TFieldType="varchar" TFieldLength="75" TFieldScale="0" IsKey="False" AllowNull="True" IsAutoInc="False"/>
+    </SField>
+    <SField SFieldName="USER8" SFieldCreateName="USER8" SFieldType="varchar" SFieldLength="75" SFieldScale="0" IsSelected="True" AutoInc="False">
+      <TField TFieldName="USER8" TFieldType="varchar" TFieldLength="75" TFieldScale="0" IsKey="False" AllowNull="True" IsAutoInc="False"/>
+    </SField>
+    <SField SFieldName="USER9" SFieldCreateName="USER9" SFieldType="varchar" SFieldLength="75" SFieldScale="0" IsSelected="True" AutoInc="False">
+      <TField TFieldName="USER9" TFieldType="varchar" TFieldLength="75" TFieldScale="0" IsKey="False" AllowNull="True" IsAutoInc="False"/>
+    </SField>
+    <SField SFieldName="USER10" SFieldCreateName="USER10" SFieldType="varchar" SFieldLength="64" SFieldScale="0" IsSelected="True" AutoInc="False">
+      <TField TFieldName="USER10" TFieldType="varchar" TFieldLength="64" TFieldScale="0" IsKey="False" AllowNull="True" IsAutoInc="False"/>
+    </SField>
+    <SField SFieldName="MANAGEUSERID" SFieldCreateName="MANAGEUSERID" SFieldType="text" SFieldLength="0" SFieldScale="0" IsSelected="True" AutoInc="False">
+      <TField TFieldName="MANAGEUSERID" TFieldType="text" TFieldLength="0" TFieldScale="0" IsKey="False" AllowNull="True" IsAutoInc="False"/>
+    </SField>
+    <SField SFieldName="CREATEUSERID" SFieldCreateName="CREATEUSERID" SFieldType="text" SFieldLength="0" SFieldScale="0" IsSelected="True" AutoInc="False">
+      <TField TFieldName="CREATEUSERID" TFieldType="text" TFieldLength="0" TFieldScale="0" IsKey="False" AllowNull="True" IsAutoInc="False"/>
+    </SField>
+    <SField SFieldName="CREATEDATE" SFieldCreateName="CREATEDATE" SFieldType="timestamp" SFieldLength="0" SFieldScale="0" IsSelected="True" AutoInc="False">
+      <TField TFieldName="CREATEDATE" TFieldType="timestamp" TFieldLength="0" TFieldScale="0" IsKey="False" AllowNull="True" IsAutoInc="False"/>
+    </SField>
+    <SField SFieldName="EDITUSERID" SFieldCreateName="EDITUSERID" SFieldType="text" SFieldLength="0" SFieldScale="0" IsSelected="True" AutoInc="False">
+      <TField TFieldName="EDITUSERID" TFieldType="text" TFieldLength="0" TFieldScale="0" IsKey="False" AllowNull="True" IsAutoInc="False"/>
+    </SField>
+    <SField SFieldName="EDITDATE" SFieldCreateName="EDITDATE" SFieldType="timestamp" SFieldLength="0" SFieldScale="0" IsSelected="True" AutoInc="False">
+      <TField TFieldName="EDITDATE" TFieldType="timestamp" TFieldLength="0" TFieldScale="0" IsKey="False" AllowNull="True" IsAutoInc="False"/>
+    </SField>
+    <SField SFieldName="CUST_ChildrenandBirthdates_101210815" SFieldCreateName="CUST_ChildrenandBirthdates_101210815" SFieldType="varchar" SFieldLength="65" SFieldScale="0" IsSelected="True" AutoInc="False">
+      <TField TFieldName="CUST_ChildrenandBirthdates_101210815" TFieldType="varchar" TFieldLength="65" TFieldScale="0" IsKey="False" AllowNull="True" IsAutoInc="False"/>
+    </SField>
+    <SField SFieldName="LASTEMAILDATE" SFieldCreateName="LASTEMAILDATE" SFieldType="timestamp" SFieldLength="0" SFieldScale="0" IsSelected="True" AutoInc="False">
+      <TField TFieldName="LASTEMAILDATE" TFieldType="timestamp" TFieldLength="0" TFieldScale="0" IsKey="False" AllowNull="True" IsAutoInc="False"/>
+    </SField>
+    <SField SFieldName="ISUSER" SFieldCreateName="ISUSER" SFieldType="bool" SFieldLength="0" SFieldScale="0" IsSelected="True" AutoInc="False">
+      <TField TFieldName="ISUSER" TFieldType="bool" TFieldLength="0" TFieldScale="0" IsKey="False" AllowNull="True" IsAutoInc="False"/>
+    </SField>
+    <SField SFieldName="IMPORTDATE" SFieldCreateName="IMPORTDATE" SFieldType="timestamp" SFieldLength="0" SFieldScale="0" IsSelected="True" AutoInc="False">
+      <TField TFieldName="IMPORTDATE" TFieldType="timestamp" TFieldLength="0" TFieldScale="0" IsKey="False" AllowNull="True" IsAutoInc="False"/>
+    </SField>
+  </STable>
+  <STable SSchemaName="dbo" STableName="TBL_CONTACT_ACL" TTableName="TBL_CONTACT_ACL" IsNewTable="True" ConditionQuery="" Query="" SourceFile="">
+    <SField SFieldName="CONTACTID" SFieldCreateName="CONTACTID" SFieldType="text" SFieldLength="0" SFieldScale="0" IsSelected="True" AutoInc="False">
+      <TField TFieldName="CONTACTID" TFieldType="text" TFieldLength="0" TFieldScale="0" IsKey="False" AllowNull="True" IsAutoInc="False"/>
+    </SField>
+    <SField SFieldName="ACCESSORID" SFieldCreateName="ACCESSORID" SFieldType="text" SFieldLength="0" SFieldScale="0" IsSelected="True" AutoInc="False">
+      <TField TFieldName="ACCESSORID" TFieldType="text" TFieldLength="0" TFieldScale="0" IsKey="False" AllowNull="True" IsAutoInc="False"/>
+    </SField>
+    <SField SFieldName="ROWSOURCE" SFieldCreateName="ROWSOURCE" SFieldType="char" SFieldLength="1" SFieldScale="0" IsSelected="True" AutoInc="False">
+      <TField TFieldName="ROWSOURCE" TFieldType="char" TFieldLength="1" TFieldScale="0" IsKey="False" AllowNull="True" IsAutoInc="False"/>
+    </SField>
+  </STable>
+  <STable SSchemaName="dbo" STableName="TBL_CONTACT_ACTIVITY" TTableName="TBL_CONTACT_ACTIVITY" IsNewTable="True" ConditionQuery="" Query="" SourceFile="">
+    <SField SFieldName="CONTACTID" SFieldCreateName="CONTACTID" SFieldType="text" SFieldLength="0" SFieldScale="0" IsSelected="True" AutoInc="False">
+      <TField TFieldName="CONTACTID" TFieldType="text" TFieldLength="0" TFieldScale="0" IsKey="False" AllowNull="True" IsAutoInc="False"/>
+    </SField>
+    <SField SFieldName="ACTIVITYID" SFieldCreateName="ACTIVITYID" SFieldType="text" SFieldLength="0" SFieldScale="0" IsSelected="True" AutoInc="False">
+      <TField TFieldName="ACTIVITYID" TFieldType="text" TFieldLength="0" TFieldScale="0" IsKey="False" AllowNull="True" IsAutoInc="False"/>
+    </SField>
+  </STable>
+  <STable SSchemaName="dbo" STableName="TBL_CONTACT_HISTORY" TTableName="TBL_CONTACT_HISTORY" IsNewTable="True" ConditionQuery="" Query="" SourceFile="">
+    <SField SFieldName="CONTACTID" SFieldCreateName="CONTACTID" SFieldType="text" SFieldLength="0" SFieldScale="0" IsSelected="True" AutoInc="False">
+      <TField TFieldName="CONTACTID" TFieldType="text" TFieldLength="0" TFieldScale="0" IsKey="False" AllowNull="True" IsAutoInc="False"/>
+    </SField>
+    <SField SFieldName="HISTORYID" SFieldCreateName="HISTORYID" SFieldType="text" SFieldLength="0" SFieldScale="0" IsSelected="True" AutoInc="False">
+      <TField TFieldName="HISTORYID" TFieldType="text" TFieldLength="0" TFieldScale="0" IsKey="False" AllowNull="True" IsAutoInc="False"/>
+    </SField>
+  </STable>
+  <STable SSchemaName="dbo" STableName="TBL_CONTACT_NOTE" TTableName="TBL_CONTACT_NOTE" IsNewTable="True" ConditionQuery="" Query="" SourceFile="">
+    <SField SFieldName="CONTACTID" SFieldCreateName="CONTACTID" SFieldType="text" SFieldLength="0" SFieldScale="0" IsSelected="True" AutoInc="False">
+      <TField TFieldName="CONTACTID" TFieldType="text" TFieldLength="0" TFieldScale="0" IsKey="False" AllowNull="True" IsAutoInc="False"/>
+    </SField>
+    <SField SFieldName="NOTEID" SFieldCreateName="NOTEID" SFieldType="text" SFieldLength="0" SFieldScale="0" IsSelected="True" AutoInc="False">
+      <TField TFieldName="NOTEID" TFieldType="text" TFieldLength="0" TFieldScale="0" IsKey="False" AllowNull="True" IsAutoInc="False"/>
+    </SField>
+  </STable>
+  <STable SSchemaName="dbo" STableName="TBL_CONTACT_OPPORTUNITY" TTableName="TBL_CONTACT_OPPORTUNITY" IsNewTable="True" ConditionQuery="" Query="" SourceFile="">
+    <SField SFieldName="CONTACTID" SFieldCreateName="CONTACTID" SFieldType="text" SFieldLength="0" SFieldScale="0" IsSelected="True" AutoInc="False">
+      <TField TFieldName="CONTACTID" TFieldType="text" TFieldLength="0" TFieldScale="0" IsKey="False" AllowNull="True" IsAutoInc="False"/>
+    </SField>
+    <SField SFieldName="OPPORTUNITYID" SFieldCreateName="OPPORTUNITYID" SFieldType="text" SFieldLength="0" SFieldScale="0" IsSelected="True" AutoInc="False">
+      <TField TFieldName="OPPORTUNITYID" TFieldType="text" TFieldLength="0" TFieldScale="0" IsKey="False" AllowNull="True" IsAutoInc="False"/>
+    </SField>
+  </STable>
+  <STable SSchemaName="dbo" STableName="TBL_COUNTRY" TTableName="TBL_COUNTRY" IsNewTable="True" ConditionQuery="" Query="" SourceFile="">
+    <SField SFieldName="COUNTRYID" SFieldCreateName="COUNTRYID" SFieldType="text" SFieldLength="0" SFieldScale="0" IsSelected="True" AutoInc="False">
+      <TField TFieldName="COUNTRYID" TFieldType="text" TFieldLength="0" TFieldScale="0" IsKey="False" AllowNull="True" IsAutoInc="False"/>
+    </SField>
+    <SField SFieldName="NAME" SFieldCreateName="NAME" SFieldType="varchar" SFieldLength="128" SFieldScale="0" IsSelected="True" AutoInc="False">
+      <TField TFieldName="NAME" TFieldType="varchar" TFieldLength="128" TFieldScale="0" IsKey="False" AllowNull="True" IsAutoInc="False"/>
+    </SField>
+  </STable>
+  <STable SSchemaName="dbo" STableName="TBL_EMAIL" TTableName="TBL_EMAIL" IsNewTable="True" ConditionQuery="" Query="" SourceFile="">
+    <SField SFieldName="EMAILID" SFieldCreateName="EMAILID" SFieldType="text" SFieldLength="0" SFieldScale="0" IsSelected="True" AutoInc="False">
+      <TField TFieldName="EMAILID" TFieldType="text" TFieldLength="0" TFieldScale="0" IsKey="False" AllowNull="True" IsAutoInc="False"/>
+    </SField>
+    <SField SFieldName="TYPEID" SFieldCreateName="TYPEID" SFieldType="text" SFieldLength="0" SFieldScale="0" IsSelected="True" AutoInc="False">
+      <TField TFieldName="TYPEID" TFieldType="text" TFieldLength="0" TFieldScale="0" IsKey="False" AllowNull="True" IsAutoInc="False"/>
+    </SField>
+    <SField SFieldName="CONTACTID" SFieldCreateName="CONTACTID" SFieldType="text" SFieldLength="0" SFieldScale="0" IsSelected="True" AutoInc="False">
+      <TField TFieldName="CONTACTID" TFieldType="text" TFieldLength="0" TFieldScale="0" IsKey="False" AllowNull="True" IsAutoInc="False"/>
+    </SField>
+    <SField SFieldName="COMPANYID" SFieldCreateName="COMPANYID" SFieldType="text" SFieldLength="0" SFieldScale="0" IsSelected="True" AutoInc="False">
+      <TField TFieldName="COMPANYID" TFieldType="text" TFieldLength="0" TFieldScale="0" IsKey="False" AllowNull="True" IsAutoInc="False"/>
+    </SField>
+    <SField SFieldName="GROUPID" SFieldCreateName="GROUPID" SFieldType="text" SFieldLength="0" SFieldScale="0" IsSelected="True" AutoInc="False">
+      <TField TFieldName="GROUPID" TFieldType="text" TFieldLength="0" TFieldScale="0" IsKey="False" AllowNull="True" IsAutoInc="False"/>
+    </SField>
+    <SField SFieldName="ADDRESS" SFieldCreateName="ADDRESS" SFieldType="varchar" SFieldLength="256" SFieldScale="0" IsSelected="True" AutoInc="False">
+      <TField TFieldName="ADDRESS" TFieldType="varchar" TFieldLength="256" TFieldScale="0" IsKey="False" AllowNull="True" IsAutoInc="False"/>
+    </SField>
+  </STable>
+  <STable SSchemaName="dbo" STableName="TBL_HISTORY" TTableName="TBL_HISTORY" IsNewTable="True" ConditionQuery="" Query="" SourceFile="">
+    <SField SFieldName="HISTORYID" SFieldCreateName="HISTORYID" SFieldType="text" SFieldLength="0" SFieldScale="0" IsSelected="True" AutoInc="False">
+      <TField TFieldName="HISTORYID" TFieldType="text" TFieldLength="0" TFieldScale="0" IsKey="False" AllowNull="True" IsAutoInc="False"/>
+    </SField>
+    <SField SFieldName="HISTORYTYPEID" SFieldCreateName="HISTORYTYPEID" SFieldType="int2" SFieldLength="0" SFieldScale="0" IsSelected="True" AutoInc="False">
+      <TField TFieldName="HISTORYTYPEID" TFieldType="int2" TFieldLength="0" TFieldScale="0" IsKey="False" AllowNull="True" IsAutoInc="False"/>
+    </SField>
+    <SField SFieldName="ISPRIVATE" SFieldCreateName="ISPRIVATE" SFieldType="int4" SFieldLength="0" SFieldScale="0" IsSelected="True" AutoInc="False">
+      <TField TFieldName="ISPRIVATE" TFieldType="int4" TFieldLength="0" TFieldScale="0" IsKey="False" AllowNull="True" IsAutoInc="False"/>
+    </SField>
+    <SField SFieldName="STARTTIME" SFieldCreateName="STARTTIME" SFieldType="timestamp" SFieldLength="0" SFieldScale="0" IsSelected="True" AutoInc="False">
+      <TField TFieldName="STARTTIME" TFieldType="timestamp" TFieldLength="0" TFieldScale="0" IsKey="False" AllowNull="True" IsAutoInc="False"/>
+    </SField>
+    <SField SFieldName="ENDTIME" SFieldCreateName="ENDTIME" SFieldType="timestamp" SFieldLength="0" SFieldScale="0" IsSelected="True" AutoInc="False">
+      <TField TFieldName="ENDTIME" TFieldType="timestamp" TFieldLength="0" TFieldScale="0" IsKey="False" AllowNull="True" IsAutoInc="False"/>
+    </SField>
+    <SField SFieldName="REGARDING" SFieldCreateName="REGARDING" SFieldType="varchar" SFieldLength="256" SFieldScale="0" IsSelected="True" AutoInc="False">
+      <TField TFieldName="REGARDING" TFieldType="varchar" TFieldLength="256" TFieldScale="0" IsKey="False" AllowNull="True" IsAutoInc="False"/>
+    </SField>
+    <SField SFieldName="DETAILS" SFieldCreateName="DETAILS" SFieldType="text" SFieldLength="0" SFieldScale="0" IsSelected="True" AutoInc="False">
+      <TField TFieldName="DETAILS" TFieldType="text" TFieldLength="0" TFieldScale="0" IsKey="False" AllowNull="True" IsAutoInc="False"/>
+    </SField>
+    <SField SFieldName="ACCESSOR_ACTIVITY_CLEAREDID" SFieldCreateName="ACCESSOR_ACTIVITY_CLEAREDID" SFieldType="text" SFieldLength="0" SFieldScale="0" IsSelected="True" AutoInc="False">
+      <TField TFieldName="ACCESSOR_ACTIVITY_CLEAREDID" TFieldType="text" TFieldLength="0" TFieldScale="0" IsKey="False" AllowNull="True" IsAutoInc="False"/>
+    </SField>
+    <SField SFieldName="MANAGEUSERID" SFieldCreateName="MANAGEUSERID" SFieldType="text" SFieldLength="0" SFieldScale="0" IsSelected="True" AutoInc="False">
+      <TField TFieldName="MANAGEUSERID" TFieldType="text" TFieldLength="0" TFieldScale="0" IsKey="False" AllowNull="True" IsAutoInc="False"/>
+    </SField>
+    <SField SFieldName="CREATEUSERID" SFieldCreateName="CREATEUSERID" SFieldType="text" SFieldLength="0" SFieldScale="0" IsSelected="True" AutoInc="False">
+      <TField TFieldName="CREATEUSERID" TFieldType="text" TFieldLength="0" TFieldScale="0" IsKey="False" AllowNull="True" IsAutoInc="False"/>
+    </SField>
+    <SField SFieldName="CREATEDATE" SFieldCreateName="CREATEDATE" SFieldType="timestamp" SFieldLength="0" SFieldScale="0" IsSelected="True" AutoInc="False">
+      <TField TFieldName="CREATEDATE" TFieldType="timestamp" TFieldLength="0" TFieldScale="0" IsKey="False" AllowNull="True" IsAutoInc="False"/>
+    </SField>
+    <SField SFieldName="EDITUSERID" SFieldCreateName="EDITUSERID" SFieldType="text" SFieldLength="0" SFieldScale="0" IsSelected="True" AutoInc="False">
+      <TField TFieldName="EDITUSERID" TFieldType="text" TFieldLength="0" TFieldScale="0" IsKey="False" AllowNull="True" IsAutoInc="False"/>
+    </SField>
+    <SField SFieldName="EDITDATE" SFieldCreateName="EDITDATE" SFieldType="timestamp" SFieldLength="0" SFieldScale="0" IsSelected="True" AutoInc="False">
+      <TField TFieldName="EDITDATE" TFieldType="timestamp" TFieldLength="0" TFieldScale="0" IsKey="False" AllowNull="True" IsAutoInc="False"/>
+    </SField>
+    <SField SFieldName="DURATION" SFieldCreateName="DURATION" SFieldType="int4" SFieldLength="0" SFieldScale="0" IsSelected="True" AutoInc="False">
+      <TField TFieldName="DURATION" TFieldType="int4" TFieldLength="0" TFieldScale="0" IsKey="False" AllowNull="True" IsAutoInc="False"/>
+    </SField>
+  </STable>
+  <STable SSchemaName="dbo" STableName="TBL_HISTORYTYPE" TTableName="TBL_HISTORYTYPE" IsNewTable="True" ConditionQuery="" Query="" SourceFile="">
+    <SField SFieldName="HISTORYTYPEGUID" SFieldCreateName="HISTORYTYPEGUID" SFieldType="text" SFieldLength="0" SFieldScale="0" IsSelected="True" AutoInc="False">
+      <TField TFieldName="HISTORYTYPEGUID" TFieldType="text" TFieldLength="0" TFieldScale="0" IsKey="False" AllowNull="True" IsAutoInc="False"/>
+    </SField>
+    <SField SFieldName="HISTORYTYPEID" SFieldCreateName="HISTORYTYPEID" SFieldType="int2" SFieldLength="0" SFieldScale="0" IsSelected="True" AutoInc="False">
+      <TField TFieldName="HISTORYTYPEID" TFieldType="int2" TFieldLength="0" TFieldScale="0" IsKey="False" AllowNull="True" IsAutoInc="False"/>
+    </SField>
+    <SField SFieldName="ACTIVITYTYPEID" SFieldCreateName="ACTIVITYTYPEID" SFieldType="int2" SFieldLength="0" SFieldScale="0" IsSelected="True" AutoInc="False">
+      <TField TFieldName="ACTIVITYTYPEID" TFieldType="int2" TFieldLength="0" TFieldScale="0" IsKey="False" AllowNull="True" IsAutoInc="False"/>
+    </SField>
+    <SField SFieldName="NAME" SFieldCreateName="NAME" SFieldType="varchar" SFieldLength="64" SFieldScale="0" IsSelected="True" AutoInc="False">
+      <TField TFieldName="NAME" TFieldType="varchar" TFieldLength="64" TFieldScale="0" IsKey="False" AllowNull="True" IsAutoInc="False"/>
+    </SField>
+    <SField SFieldName="DESCRIPTION" SFieldCreateName="DESCRIPTION" SFieldType="varchar" SFieldLength="128" SFieldScale="0" IsSelected="True" AutoInc="False">
+      <TField TFieldName="DESCRIPTION" TFieldType="varchar" TFieldLength="128" TFieldScale="0" IsKey="False" AllowNull="True" IsAutoInc="False"/>
+    </SField>
+    <SField SFieldName="ISACTIVE" SFieldCreateName="ISACTIVE" SFieldType="bool" SFieldLength="0" SFieldScale="0" IsSelected="True" AutoInc="False">
+      <TField TFieldName="ISACTIVE" TFieldType="bool" TFieldLength="0" TFieldScale="0" IsKey="False" AllowNull="True" IsAutoInc="False"/>
+    </SField>
+    <SField SFieldName="ISCUSTOM" SFieldCreateName="ISCUSTOM" SFieldType="bool" SFieldLength="0" SFieldScale="0" IsSelected="True" AutoInc="False">
+      <TField TFieldName="ISCUSTOM" TFieldType="bool" TFieldLength="0" TFieldScale="0" IsKey="False" AllowNull="True" IsAutoInc="False"/>
+    </SField>
+    <SField SFieldName="ISUSERRECORDABLE" SFieldCreateName="ISUSERRECORDABLE" SFieldType="bool" SFieldLength="0" SFieldScale="0" IsSelected="True" AutoInc="False">
+      <TField TFieldName="ISUSERRECORDABLE" TFieldType="bool" TFieldLength="0" TFieldScale="0" IsKey="False" AllowNull="True" IsAutoInc="False"/>
+    </SField>
+    <SField SFieldName="ISDEFAULT" SFieldCreateName="ISDEFAULT" SFieldType="bool" SFieldLength="0" SFieldScale="0" IsSelected="True" AutoInc="False">
+      <TField TFieldName="ISDEFAULT" TFieldType="bool" TFieldLength="0" TFieldScale="0" IsKey="False" AllowNull="True" IsAutoInc="False"/>
+    </SField>
+    <SField SFieldName="CLEARTYPENUM" SFieldCreateName="CLEARTYPENUM" SFieldType="int4" SFieldLength="0" SFieldScale="0" IsSelected="True" AutoInc="False">
+      <TField TFieldName="CLEARTYPENUM" TFieldType="int4" TFieldLength="0" TFieldScale="0" IsKey="False" AllowNull="True" IsAutoInc="False"/>
+    </SField>
+    <SField SFieldName="CREATEUSERID" SFieldCreateName="CREATEUSERID" SFieldType="text" SFieldLength="0" SFieldScale="0" IsSelected="True" AutoInc="False">
+      <TField TFieldName="CREATEUSERID" TFieldType="text" TFieldLength="0" TFieldScale="0" IsKey="False" AllowNull="True" IsAutoInc="False"/>
+    </SField>
+    <SField SFieldName="CREATEDATE" SFieldCreateName="CREATEDATE" SFieldType="timestamp" SFieldLength="0" SFieldScale="0" IsSelected="True" AutoInc="False">
+      <TField TFieldName="CREATEDATE" TFieldType="timestamp" TFieldLength="0" TFieldScale="0" IsKey="False" AllowNull="True" IsAutoInc="False"/>
+    </SField>
+    <SField SFieldName="EDITUSERID" SFieldCreateName="EDITUSERID" SFieldType="text" SFieldLength="0" SFieldScale="0" IsSelected="True" AutoInc="False">
+      <TField TFieldName="EDITUSERID" TFieldType="text" TFieldLength="0" TFieldScale="0" IsKey="False" AllowNull="True" IsAutoInc="False"/>
+    </SField>
+    <SField SFieldName="EDITDATE" SFieldCreateName="EDITDATE" SFieldType="timestamp" SFieldLength="0" SFieldScale="0" IsSelected="True" AutoInc="False">
+      <TField TFieldName="EDITDATE" TFieldType="timestamp" TFieldLength="0" TFieldScale="0" IsKey="False" AllowNull="True" IsAutoInc="False"/>
+    </SField>
+  </STable>
+  <STable SSchemaName="dbo" STableName="TBL_NOTE" TTableName="TBL_NOTE" IsNewTable="True" ConditionQuery="" Query="" SourceFile="">
+    <SField SFieldName="NOTEID" SFieldCreateName="NOTEID" SFieldType="text" SFieldLength="0" SFieldScale="0" IsSelected="True" AutoInc="False">
+      <TField TFieldName="NOTEID" TFieldType="text" TFieldLength="0" TFieldScale="0" IsKey="False" AllowNull="True" IsAutoInc="False"/>
+    </SField>
+    <SField SFieldName="NOTETYPEID" SFieldCreateName="NOTETYPEID" SFieldType="int2" SFieldLength="0" SFieldScale="0" IsSelected="True" AutoInc="False">
+      <TField TFieldName="NOTETYPEID" TFieldType="int2" TFieldLength="0" TFieldScale="0" IsKey="False" AllowNull="True" IsAutoInc="False"/>
+    </SField>
+    <SField SFieldName="ISPRIVATE" SFieldCreateName="ISPRIVATE" SFieldType="int4" SFieldLength="0" SFieldScale="0" IsSelected="True" AutoInc="False">
+      <TField TFieldName="ISPRIVATE" TFieldType="int4" TFieldLength="0" TFieldScale="0" IsKey="False" AllowNull="True" IsAutoInc="False"/>
+    </SField>
+    <SField SFieldName="NOTETEXT" SFieldCreateName="NOTETEXT" SFieldType="text" SFieldLength="0" SFieldScale="0" IsSelected="True" AutoInc="False">
+      <TField TFieldName="NOTETEXT" TFieldType="text" TFieldLength="0" TFieldScale="0" IsKey="False" AllowNull="True" IsAutoInc="False"/>
+    </SField>
+    <SField SFieldName="MANAGEUSERID" SFieldCreateName="MANAGEUSERID" SFieldType="text" SFieldLength="0" SFieldScale="0" IsSelected="True" AutoInc="False">
+      <TField TFieldName="MANAGEUSERID" TFieldType="text" TFieldLength="0" TFieldScale="0" IsKey="False" AllowNull="True" IsAutoInc="False"/>
+    </SField>
+    <SField SFieldName="DISPLAYDATE" SFieldCreateName="DISPLAYDATE" SFieldType="timestamp" SFieldLength="0" SFieldScale="0" IsSelected="True" AutoInc="False">
+      <TField TFieldName="DISPLAYDATE" TFieldType="timestamp" TFieldLength="0" TFieldScale="0" IsKey="False" AllowNull="True" IsAutoInc="False"/>
+    </SField>
+    <SField SFieldName="CREATEUSERID" SFieldCreateName="CREATEUSERID" SFieldType="text" SFieldLength="0" SFieldScale="0" IsSelected="True" AutoInc="False">
+      <TField TFieldName="CREATEUSERID" TFieldType="text" TFieldLength="0" TFieldScale="0" IsKey="False" AllowNull="True" IsAutoInc="False"/>
+    </SField>
+    <SField SFieldName="CREATEDATE" SFieldCreateName="CREATEDATE" SFieldType="timestamp" SFieldLength="0" SFieldScale="0" IsSelected="True" AutoInc="False">
+      <TField TFieldName="CREATEDATE" TFieldType="timestamp" TFieldLength="0" TFieldScale="0" IsKey="False" AllowNull="True" IsAutoInc="False"/>
+    </SField>
+    <SField SFieldName="EDITUSERID" SFieldCreateName="EDITUSERID" SFieldType="text" SFieldLength="0" SFieldScale="0" IsSelected="True" AutoInc="False">
+      <TField TFieldName="EDITUSERID" TFieldType="text" TFieldLength="0" TFieldScale="0" IsKey="False" AllowNull="True" IsAutoInc="False"/>
+    </SField>
+    <SField SFieldName="EDITDATE" SFieldCreateName="EDITDATE" SFieldType="timestamp" SFieldLength="0" SFieldScale="0" IsSelected="True" AutoInc="False">
+      <TField TFieldName="EDITDATE" TFieldType="timestamp" TFieldLength="0" TFieldScale="0" IsKey="False" AllowNull="True" IsAutoInc="False"/>
+    </SField>
+  </STable>
+  <STable SSchemaName="dbo" STableName="TBL_NOTETYPE" TTableName="TBL_NOTETYPE" IsNewTable="True" ConditionQuery="" Query="" SourceFile="">
+    <SField SFieldName="NOTETYPEGUID" SFieldCreateName="NOTETYPEGUID" SFieldType="text" SFieldLength="0" SFieldScale="0" IsSelected="True" AutoInc="False">
+      <TField TFieldName="NOTETYPEGUID" TFieldType="text" TFieldLength="0" TFieldScale="0" IsKey="False" AllowNull="True" IsAutoInc="False"/>
+    </SField>
+    <SField SFieldName="NOTETYPEID" SFieldCreateName="NOTETYPEID" SFieldType="int2" SFieldLength="0" SFieldScale="0" IsSelected="True" AutoInc="False">
+      <TField TFieldName="NOTETYPEID" TFieldType="int2" TFieldLength="0" TFieldScale="0" IsKey="False" AllowNull="True" IsAutoInc="False"/>
+    </SField>
+    <SField SFieldName="NAME" SFieldCreateName="NAME" SFieldType="varchar" SFieldLength="64" SFieldScale="0" IsSelected="True" AutoInc="False">
+      <TField TFieldName="NAME" TFieldType="varchar" TFieldLength="64" TFieldScale="0" IsKey="False" AllowNull="True" IsAutoInc="False"/>
+    </SField>
+    <SField SFieldName="DESCRIPTION" SFieldCreateName="DESCRIPTION" SFieldType="varchar" SFieldLength="128" SFieldScale="0" IsSelected="True" AutoInc="False">
+      <TField TFieldName="DESCRIPTION" TFieldType="varchar" TFieldLength="128" TFieldScale="0" IsKey="False" AllowNull="True" IsAutoInc="False"/>
+    </SField>
+    <SField SFieldName="ISACTIVE" SFieldCreateName="ISACTIVE" SFieldType="bool" SFieldLength="0" SFieldScale="0" IsSelected="True" AutoInc="False">
+      <TField TFieldName="ISACTIVE" TFieldType="bool" TFieldLength="0" TFieldScale="0" IsKey="False" AllowNull="True" IsAutoInc="False"/>
+    </SField>
+    <SField SFieldName="ISCUSTOM" SFieldCreateName="ISCUSTOM" SFieldType="bool" SFieldLength="0" SFieldScale="0" IsSelected="True" AutoInc="False">
+      <TField TFieldName="ISCUSTOM" TFieldType="bool" TFieldLength="0" TFieldScale="0" IsKey="False" AllowNull="True" IsAutoInc="False"/>
+    </SField>
+    <SField SFieldName="CREATEUSERID" SFieldCreateName="CREATEUSERID" SFieldType="text" SFieldLength="0" SFieldScale="0" IsSelected="True" AutoInc="False">
+      <TField TFieldName="CREATEUSERID" TFieldType="text" TFieldLength="0" TFieldScale="0" IsKey="False" AllowNull="True" IsAutoInc="False"/>
+    </SField>
+    <SField SFieldName="CREATEDATE" SFieldCreateName="CREATEDATE" SFieldType="timestamp" SFieldLength="0" SFieldScale="0" IsSelected="True" AutoInc="False">
+      <TField TFieldName="CREATEDATE" TFieldType="timestamp" TFieldLength="0" TFieldScale="0" IsKey="False" AllowNull="True" IsAutoInc="False"/>
+    </SField>
+    <SField SFieldName="EDITUSERID" SFieldCreateName="EDITUSERID" SFieldType="text" SFieldLength="0" SFieldScale="0" IsSelected="True" AutoInc="False">
+      <TField TFieldName="EDITUSERID" TFieldType="text" TFieldLength="0" TFieldScale="0" IsKey="False" AllowNull="True" IsAutoInc="False"/>
+    </SField>
+    <SField SFieldName="EDITDATE" SFieldCreateName="EDITDATE" SFieldType="timestamp" SFieldLength="0" SFieldScale="0" IsSelected="True" AutoInc="False">
+      <TField TFieldName="EDITDATE" TFieldType="timestamp" TFieldLength="0" TFieldScale="0" IsKey="False" AllowNull="True" IsAutoInc="False"/>
+    </SField>
+  </STable>
+  <STable SSchemaName="dbo" STableName="TBL_PHONE" TTableName="TBL_PHONE" IsNewTable="True" ConditionQuery="" Query="" SourceFile="">
+    <SField SFieldName="PHONEID" SFieldCreateName="PHONEID" SFieldType="text" SFieldLength="0" SFieldScale="0" IsSelected="True" AutoInc="False">
+      <TField TFieldName="PHONEID" TFieldType="text" TFieldLength="0" TFieldScale="0" IsKey="False" AllowNull="True" IsAutoInc="False"/>
+    </SField>
+    <SField SFieldName="TYPEID" SFieldCreateName="TYPEID" SFieldType="text" SFieldLength="0" SFieldScale="0" IsSelected="True" AutoInc="False">
+      <TField TFieldName="TYPEID" TFieldType="text" TFieldLength="0" TFieldScale="0" IsKey="False" AllowNull="True" IsAutoInc="False"/>
+    </SField>
+    <SField SFieldName="CONTACTID" SFieldCreateName="CONTACTID" SFieldType="text" SFieldLength="0" SFieldScale="0" IsSelected="True" AutoInc="False">
+      <TField TFieldName="CONTACTID" TFieldType="text" TFieldLength="0" TFieldScale="0" IsKey="False" AllowNull="True" IsAutoInc="False"/>
+    </SField>
+    <SField SFieldName="COMPANYID" SFieldCreateName="COMPANYID" SFieldType="text" SFieldLength="0" SFieldScale="0" IsSelected="True" AutoInc="False">
+      <TField TFieldName="COMPANYID" TFieldType="text" TFieldLength="0" TFieldScale="0" IsKey="False" AllowNull="True" IsAutoInc="False"/>
+    </SField>
+    <SField SFieldName="GROUPID" SFieldCreateName="GROUPID" SFieldType="text" SFieldLength="0" SFieldScale="0" IsSelected="True" AutoInc="False">
+      <TField TFieldName="GROUPID" TFieldType="text" TFieldLength="0" TFieldScale="0" IsKey="False" AllowNull="True" IsAutoInc="False"/>
+    </SField>
+    <SField SFieldName="NUMBERVALUE" SFieldCreateName="NUMBERVALUE" SFieldType="varchar" SFieldLength="32" SFieldScale="0" IsSelected="True" AutoInc="False">
+      <TField TFieldName="NUMBERVALUE" TFieldType="varchar" TFieldLength="32" TFieldScale="0" IsKey="False" AllowNull="True" IsAutoInc="False"/>
+    </SField>
+    <SField SFieldName="NUMBERDISPLAY" SFieldCreateName="NUMBERDISPLAY" SFieldType="varchar" SFieldLength="32" SFieldScale="0" IsSelected="True" AutoInc="False">
+      <TField TFieldName="NUMBERDISPLAY" TFieldType="varchar" TFieldLength="32" TFieldScale="0" IsKey="False" AllowNull="True" IsAutoInc="False"/>
+    </SField>
+    <SField SFieldName="SUFFIX" SFieldCreateName="SUFFIX" SFieldType="varchar" SFieldLength="256" SFieldScale="0" IsSelected="True" AutoInc="False">
+      <TField TFieldName="SUFFIX" TFieldType="varchar" TFieldLength="256" TFieldScale="0" IsKey="False" AllowNull="True" IsAutoInc="False"/>
+    </SField>
+    <SField SFieldName="COUNTRYCODE" SFieldCreateName="COUNTRYCODE" SFieldType="int2" SFieldLength="0" SFieldScale="0" IsSelected="True" AutoInc="False">
+      <TField TFieldName="COUNTRYCODE" TFieldType="int2" TFieldLength="0" TFieldScale="0" IsKey="False" AllowNull="True" IsAutoInc="False"/>
+    </SField>
+    <SField SFieldName="PHONEMASKID" SFieldCreateName="PHONEMASKID" SFieldType="text" SFieldLength="0" SFieldScale="0" IsSelected="True" AutoInc="False">
+      <TField TFieldName="PHONEMASKID" TFieldType="text" TFieldLength="0" TFieldScale="0" IsKey="False" AllowNull="True" IsAutoInc="False"/>
+    </SField>
+  </STable>
+  <STable SSchemaName="dbo" STableName="TBL_PHONEMASK" TTableName="TBL_PHONEMASK" IsNewTable="True" ConditionQuery="" Query="" SourceFile="">
+    <SField SFieldName="PHONEMASKID" SFieldCreateName="PHONEMASKID" SFieldType="text" SFieldLength="0" SFieldScale="0" IsSelected="True" AutoInc="False">
+      <TField TFieldName="PHONEMASKID" TFieldType="text" TFieldLength="0" TFieldScale="0" IsKey="False" AllowNull="True" IsAutoInc="False"/>
+    </SField>
+    <SField SFieldName="PHONEMASK" SFieldCreateName="PHONEMASK" SFieldType="varchar" SFieldLength="32" SFieldScale="0" IsSelected="True" AutoInc="False">
+      <TField TFieldName="PHONEMASK" TFieldType="varchar" TFieldLength="32" TFieldScale="0" IsKey="False" AllowNull="True" IsAutoInc="False"/>
+    </SField>
+    <SField SFieldName="ISDEFAULT" SFieldCreateName="ISDEFAULT" SFieldType="bool" SFieldLength="0" SFieldScale="0" IsSelected="True" AutoInc="False">
+      <TField TFieldName="ISDEFAULT" TFieldType="bool" TFieldLength="0" TFieldScale="0" IsKey="False" AllowNull="True" IsAutoInc="False"/>
+    </SField>
+    <SField SFieldName="COUNTRYID" SFieldCreateName="COUNTRYID" SFieldType="text" SFieldLength="0" SFieldScale="0" IsSelected="True" AutoInc="False">
+      <TField TFieldName="COUNTRYID" TFieldType="text" TFieldLength="0" TFieldScale="0" IsKey="False" AllowNull="True" IsAutoInc="False"/>
+    </SField>
+    <SField SFieldName="ISACTIVE" SFieldCreateName="ISACTIVE" SFieldType="bool" SFieldLength="0" SFieldScale="0" IsSelected="True" AutoInc="False">
+      <TField TFieldName="ISACTIVE" TFieldType="bool" TFieldLength="0" TFieldScale="0" IsKey="False" AllowNull="True" IsAutoInc="False"/>
+    </SField>
+    <SField SFieldName="CREATEUSERID" SFieldCreateName="CREATEUSERID" SFieldType="text" SFieldLength="0" SFieldScale="0" IsSelected="True" AutoInc="False">
+      <TField TFieldName="CREATEUSERID" TFieldType="text" TFieldLength="0" TFieldScale="0" IsKey="False" AllowNull="True" IsAutoInc="False"/>
+    </SField>
+    <SField SFieldName="CREATEDATE" SFieldCreateName="CREATEDATE" SFieldType="timestamp" SFieldLength="0" SFieldScale="0" IsSelected="True" AutoInc="False">
+      <TField TFieldName="CREATEDATE" TFieldType="timestamp" TFieldLength="0" TFieldScale="0" IsKey="False" AllowNull="True" IsAutoInc="False"/>
+    </SField>
+    <SField SFieldName="EDITUSERID" SFieldCreateName="EDITUSERID" SFieldType="text" SFieldLength="0" SFieldScale="0" IsSelected="True" AutoInc="False">
+      <TField TFieldName="EDITUSERID" TFieldType="text" TFieldLength="0" TFieldScale="0" IsKey="False" AllowNull="True" IsAutoInc="False"/>
+    </SField>
+    <SField SFieldName="EDITDATE" SFieldCreateName="EDITDATE" SFieldType="timestamp" SFieldLength="0" SFieldScale="0" IsSelected="True" AutoInc="False">
+      <TField TFieldName="EDITDATE" TFieldType="timestamp" TFieldLength="0" TFieldScale="0" IsKey="False" AllowNull="True" IsAutoInc="False"/>
+    </SField>
+  </STable>
+  <STable SSchemaName="dbo" STableName="TBL_SECONDARY" TTableName="TBL_SECONDARY" IsNewTable="True" ConditionQuery="" Query="" SourceFile="">
+    <SField SFieldName="SECONDARYID" SFieldCreateName="SECONDARYID" SFieldType="text" SFieldLength="0" SFieldScale="0" IsSelected="True" AutoInc="False">
+      <TField TFieldName="SECONDARYID" TFieldType="text" TFieldLength="0" TFieldScale="0" IsKey="False" AllowNull="True" IsAutoInc="False"/>
+    </SField>
+    <SField SFieldName="CONTACTID" SFieldCreateName="CONTACTID" SFieldType="text" SFieldLength="0" SFieldScale="0" IsSelected="True" AutoInc="False">
+      <TField TFieldName="CONTACTID" TFieldType="text" TFieldLength="0" TFieldScale="0" IsKey="False" AllowNull="True" IsAutoInc="False"/>
+    </SField>
+    <SField SFieldName="CREATEUSERID" SFieldCreateName="CREATEUSERID" SFieldType="text" SFieldLength="0" SFieldScale="0" IsSelected="True" AutoInc="False">
+      <TField TFieldName="CREATEUSERID" TFieldType="text" TFieldLength="0" TFieldScale="0" IsKey="False" AllowNull="True" IsAutoInc="False"/>
+    </SField>
+    <SField SFieldName="CREATEDATE" SFieldCreateName="CREATEDATE" SFieldType="timestamp" SFieldLength="0" SFieldScale="0" IsSelected="True" AutoInc="False">
+      <TField TFieldName="CREATEDATE" TFieldType="timestamp" TFieldLength="0" TFieldScale="0" IsKey="False" AllowNull="True" IsAutoInc="False"/>
+    </SField>
+  </STable>
+  <STable SSchemaName="dbo" STableName="TBL_USER" TTableName="TBL_USER" IsNewTable="True" ConditionQuery="" Query="" SourceFile="">
+    <SField SFieldName="USERID" SFieldCreateName="USERID" SFieldType="text" SFieldLength="0" SFieldScale="0" IsSelected="True" AutoInc="False">
+      <TField TFieldName="USERID" TFieldType="text" TFieldLength="0" TFieldScale="0" IsKey="False" AllowNull="True" IsAutoInc="False"/>
+    </SField>
+    <SField SFieldName="CONTACTID" SFieldCreateName="CONTACTID" SFieldType="text" SFieldLength="0" SFieldScale="0" IsSelected="True" AutoInc="False">
+      <TField TFieldName="CONTACTID" TFieldType="text" TFieldLength="0" TFieldScale="0" IsKey="False" AllowNull="True" IsAutoInc="False"/>
+    </SField>
+    <SField SFieldName="ROLEID" SFieldCreateName="ROLEID" SFieldType="text" SFieldLength="0" SFieldScale="0" IsSelected="True" AutoInc="False">
+      <TField TFieldName="ROLEID" TFieldType="text" TFieldLength="0" TFieldScale="0" IsKey="False" AllowNull="True" IsAutoInc="False"/>
+    </SField>
+    <SField SFieldName="USERLOGIN" SFieldCreateName="USERLOGIN" SFieldType="varchar" SFieldLength="128" SFieldScale="0" IsSelected="True" AutoInc="False">
+      <TField TFieldName="USERLOGIN" TFieldType="varchar" TFieldLength="128" TFieldScale="0" IsKey="False" AllowNull="True" IsAutoInc="False"/>
+    </SField>
+    <SField SFieldName="PASSWORD" SFieldCreateName="PASSWORD" SFieldType="varchar" SFieldLength="50" SFieldScale="0" IsSelected="True" AutoInc="False">
+      <TField TFieldName="PASSWORD" TFieldType="varchar" TFieldLength="50" TFieldScale="0" IsKey="False" AllowNull="True" IsAutoInc="False"/>
+    </SField>
+    <SField SFieldName="USEPERSONALFILES" SFieldCreateName="USEPERSONALFILES" SFieldType="bool" SFieldLength="0" SFieldScale="0" IsSelected="True" AutoInc="False">
+      <TField TFieldName="USEPERSONALFILES" TFieldType="bool" TFieldLength="0" TFieldScale="0" IsKey="False" AllowNull="True" IsAutoInc="False"/>
+    </SField>
+    <SField SFieldName="ISVERIFIED" SFieldCreateName="ISVERIFIED" SFieldType="bool" SFieldLength="0" SFieldScale="0" IsSelected="True" AutoInc="False">
+      <TField TFieldName="ISVERIFIED" TFieldType="bool" TFieldLength="0" TFieldScale="0" IsKey="False" AllowNull="True" IsAutoInc="False"/>
+    </SField>
+    <SField SFieldName="UTC_OFFSET" SFieldCreateName="UTC_OFFSET" SFieldType="int2" SFieldLength="0" SFieldScale="0" IsSelected="True" AutoInc="False">
+      <TField TFieldName="UTC_OFFSET" TFieldType="int2" TFieldLength="0" TFieldScale="0" IsKey="False" AllowNull="True" IsAutoInc="False"/>
+    </SField>
+    <SField SFieldName="ISFORCEPWDCHG" SFieldCreateName="ISFORCEPWDCHG" SFieldType="bool" SFieldLength="0" SFieldScale="0" IsSelected="True" AutoInc="False">
+      <TField TFieldName="ISFORCEPWDCHG" TFieldType="bool" TFieldLength="0" TFieldScale="0" IsKey="False" AllowNull="True" IsAutoInc="False"/>
+    </SField>
+    <SField SFieldName="ISALLOWPWDCHG" SFieldCreateName="ISALLOWPWDCHG" SFieldType="bool" SFieldLength="0" SFieldScale="0" IsSelected="True" AutoInc="False">
+      <TField TFieldName="ISALLOWPWDCHG" TFieldType="bool" TFieldLength="0" TFieldScale="0" IsKey="False" AllowNull="True" IsAutoInc="False"/>
+    </SField>
+    <SField SFieldName="ISPWDNEVEREXPIRE" SFieldCreateName="ISPWDNEVEREXPIRE" SFieldType="bool" SFieldLength="0" SFieldScale="0" IsSelected="True" AutoInc="False">
+      <TField TFieldName="ISPWDNEVEREXPIRE" TFieldType="bool" TFieldLength="0" TFieldScale="0" IsKey="False" AllowNull="True" IsAutoInc="False"/>
+    </SField>
+    <SField SFieldName="ISPWDCASESENSITIVE" SFieldCreateName="ISPWDCASESENSITIVE" SFieldType="bool" SFieldLength="0" SFieldScale="0" IsSelected="True" AutoInc="False">
+      <TField TFieldName="ISPWDCASESENSITIVE" TFieldType="bool" TFieldLength="0" TFieldScale="0" IsKey="False" AllowNull="True" IsAutoInc="False"/>
+    </SField>
+    <SField SFieldName="LAST_LOGONHISTORYID" SFieldCreateName="LAST_LOGONHISTORYID" SFieldType="text" SFieldLength="0" SFieldScale="0" IsSelected="True" AutoInc="False">
+      <TField TFieldName="LAST_LOGONHISTORYID" TFieldType="text" TFieldLength="0" TFieldScale="0" IsKey="False" AllowNull="True" IsAutoInc="False"/>
+    </SField>
+  </STable>
+</ImportProfile>

@@ -1,0 +1,28 @@
+SELECT
+"public"."TBL_CONTACT"."CONTACTID" as contact_id,
+"public"."TBL_CONTACT"."LASTNAME" as "Last Name",
+"public"."TBL_CONTACT"."FIRSTNAME" as "First Name",
+"public"."TBL_CONTACT"."MIDDLENAME" as "Middle Name",
+"public"."TBL_CONTACT"."NAMEPREFIX" as "Salutation",
+"public"."TBL_CONTACT"."NAMESUFFIX" as "Suffix",
+"public"."TBL_CONTACT"."SALUTATION" as "Nickname",
+"public"."TBL_CONTACT"."CATEGORY" as "Client Type",
+"public"."TBL_CONTACT"."JOBTITLE" as "Employed Position",
+"public"."TBL_CONTACT"."DEPARTMENT" as "Profession",
+"public"."TBL_CONTACT"."COMPANYNAME" as "Company Name",
+"public"."TBL_CONTACT"."CONTACTWEBADDRESS" as "Web Site",
+"public"."TBL_CONTACT"."REFERREDBY" as "Referred By",
+"public"."TBL_CONTACT"."SPOUSENAME" as "Spouse",
+"public"."TBL_CONTACT"."BIRTHDATE" as "Birthdate",
+"public"."TBL_CONTACT"."USER1" AS "SSN",
+"public"."TBL_CONTACT"."USER2" AS "Driver License",
+"public"."TBL_CONTACT"."USER3" AS "Income",
+"public"."TBL_CONTACT"."USER4" AS "Life Ins.1",
+"public"."TBL_CONTACT"."USER5" AS "Life Ins.2",
+"public"."TBL_CONTACT"."USER6" AS "Life Ins.3",
+"public"."TBL_CONTACT"."USER7" AS "Life Ins.4",
+"public"."TBL_CONTACT"."USER8" AS "Life Ins.5",
+"public"."TBL_CONTACT"."USER9" AS "Life Ins.6",
+"public"."TBL_CONTACT"."USER10" AS "2nd-to-Di"
+FROM
+"public"."TBL_CONTACT"

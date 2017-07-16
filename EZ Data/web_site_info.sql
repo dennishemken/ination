@@ -1,0 +1,8 @@
+SELECT
+"public"."WEBADDRESS"."CONTACTID",
+"public"."WEBADDRESS"."ADDRESS",
+"public"."WEBADDRESS"."REMARK"
+FROM
+"public"."WEBADDRESS"
+WHERE
+"public"."WEBADDRESS"."TYPE" =  '2'

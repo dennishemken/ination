@@ -1,0 +1,23 @@
+insert into round_identities 
+(user_id,standard,name,organization,email,reply-to,signature,html_signature)
+(
+select 
+round_users.user_id,
+nbmail_incoming_accounts.full_name,
+nbmail_incoming_accounts.organization,
+nbmail_incoming_accounts.email,
+nbmail_incoming_accounts.reply_to,
+nbmail_documents.title,
+nbmail_documents.document 
+from round_users 
+inner join nbmail_incoming_accounts on nbmail_incoming_accounts.username = round_users.username or nbmail_incoming_accounts.title = round_users.alias 
+inner join nbmail_documents on nbmail_documents.title = nbmail_incoming_accounts.signature
+where round_users.user_id not in (select round_users.user_id from round_identities)
+);
+
+
+update signature_disclaimer 
+set signature = signature||'<br /><br /><br /><br />'||nbmail_documents.document 
+from round_users inner join nbmail_incoming_accounts on nbmail_incoming_accounts.username = round_users.username or nbmail_incoming_accounts.title = round_users.alias 
+inner join nbmail_documents on nbmail_documents.title = nbmail_incoming_accounts.disclaimer
+where round_users.user_id = round_identities.user_id;

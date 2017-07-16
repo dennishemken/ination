@@ -1,0 +1,15 @@
+SELECT
+"public"."contacts"."contact_id",
+"public"."contacts"."first_name",
+"public"."contacts"."middle_name",
+"public"."contacts"."last_name",
+"public"."contacts"."suffix",
+"public"."contacts"."company",
+"public"."contacts"."birthday",
+"public"."contacts"."categories",
+"public"."contacts"."initials",
+"public"."contacts"."notes",
+"public"."contacts"."spouse",
+"public"."contacts"."web_page"
+FROM
+"public"."contacts"

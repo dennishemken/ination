@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ExportProfile Ver="1.1">
+  <General ConnectionName="Localhost8.4" DatabaseName="AdamVanDyke" SchemaName="public" ExportType="Text" TargetCodepage="65001" AddTimeStamp="False" TimeStampFormat="" IncludeTitle="True" FieldDelimiter="," DateFormat="MDY" DateSeparator="/" TimeSeparator=":" DecimalSeparator="." TextQualifier="&quot;" RowDelimiter="0" XMLFormat="Element" AppendRecord="False" ContinueOnError="True"/>
+  <STable STableName="phone_info" TTableName="" TargetFile="E:\client_data\AdamVanDyke\phone_info.txt" AllFields="True"/>
+</ExportProfile>

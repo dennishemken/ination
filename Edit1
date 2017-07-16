@@ -1,0 +1,225 @@
+﻿780  cd region-tools/
+  781  ./upgrade_regions scrm-1.2.5-3 northlinewealth
+  782  exit
+  783  cd region-tools/
+  784  ls
+  785  rm smarsh_region_list
+  786  vi smarsh_region_list
+  787  ./upgrade_regions scrm-1.2.5-3
+  788  top
+  789  vi /opt/ination/hig/highmarkcap/phpgwapi/inc/class.contacts_sql.inc.php
+  790  cp /opt/ination/hig/highmarkcap/phpgwapi/inc/class.contacts_sql.inc.php .
+  791  ls
+  792  ls -latr
+  793  ls
+  794  vi upgrade_single_file.sh
+  795  ./upgrade_single_file.sh
+  796  vi /opt/ination/iea/ieadvisors/nbmail/inc/class.uinbmail.inc.php
+  797  dig intelligent-edge.com
+  798  nslookup 12.180.54.153
+  799  dig -x  12.180.54.153
+  800  cd /opt/ination/iea/ieadvisors
+  801  cd docworker/inc/
+  802  ls
+  803  sudo vi class.bodocworker.inc.php
+  804  vi /opt/ination/iea/ieadvisors/nbmail/inc/class.uinbmail.inc.php
+  805  cd /opt/ination
+  806  ls
+  807  rm prod-scrm-1.2.5-3.tar.gz
+  808  cd ~/region-tools/
+  809  vi upgrade_single_file.sh
+  810  ./upgrade_regions scrm-1.2.5-3 trainingbeta
+  811  ./upgrade_regions scrm-1.2.5-3 vsrfin
+  812  tail -f -n 50000 /var/log/apache2/error_log | grep ieadvisors
+  813  vi /opt/ination/iea/ieadvisors/header.inc.php
+  814  /usr/local/pgsql/bin/psql -U postgres -h countach ieadvisors
+  815  tail -n 50000 /var/log/apache2/error_log | grep afp.smarshcrm
+  816  tail -n 50000 -f /var/log/apache2/error_log | grep afp.smarshcrm
+  817  top
+  818  cd /opt/ination/afp/afp/docworker/inc/
+  819  vi class.bodocworker.inc.php
+  820  cd /opt/ination/par/parkwayfinancialgrp
+  821  sudo vi infolog/inc/class.bolink.inc.php
+  822  cp infolog/inc/class.bolink.inc.php ~/region-tools/
+  823  cd ~/region-tools/
+  824  vi upgrade_single_file.sh
+  825  ./upgrade_single_file.sh
+  826  /usr/local/pgsql/bin/psql  -U postgres -h countach parkwayfinancialgroup
+  827  /usr/local/pgsql/bin/psql  -U postgres -h countach parkwayfinancialgrp
+  828  /usr/local/pgsql/bin/psql  -U postgres -h countach ieadvisors
+  829  cd /srv/tmp/Archive/
+  830  ls
+  831  ls -Fla
+  832  ls -Flah
+  833  cd region-tools/
+  834  ./upgrade_regions scrm-1.2.5-3 adestcapitalmanagement
+  835  exit
+  836  cd region-tools/
+  837  ./upgrade_regions scrm-1.2.5-3 joedoggett
+  838  cd /opt/ination/kfs/kfs/phpgwapi/inc/
+  839  vi class.html.inc.php
+  840  vi ../../report/inc/class.uireport.inc.php
+  841  tail -f /var/log/apache2/error_log | grep kfs
+  842  dig global.ination.com
+  843  /usr/local/pgsql/bin/psql -U postgres -h excursion global
+  844  cd /opt/ination/glo/global/
+  845  lks
+  846  ls
+  847  cd /usr/local/apache/vhosts/80/
+  848  ls
+  849  ls -Fla glo/
+  850  cd ..
+  851  ls -Fla 443/glo/
+  852  cd /opt/ination/tra/trainingbeta/financialCalc/inc/
+  853  vi class.ui.inc.php
+  854  /usr/local/pgsql/bin/psql -U postgres -h countach smarsh
+  855  /usr/local/pgsql/bin/psql -U postgres -h countach trainingbeta2
+  856  /usr/local/pgsql/bin/psql -U postgres -h countach webdemo
+  857  cd ~/region-tools/
+  858  ls
+  859  vi change_admin_pass.sql
+  860  cp /opt/ination/vsr/vsrfin/common/theme/default/js/foundation.js
+  861  cp /opt/ination/vsr/vsrfin/common/theme/default/js/foundation.js .
+  862  ls
+  863  vi foundation.js
+  864  vi upgrade_single_file.sh
+  865  ./upgrade_single_file.sh
+  866  ls
+  867  vi upgrade_scrm_regions_sql.sh
+  868  ./upgrade_scrm_regions_sql.sh change_admin_pass
+  869  cp /opt/ination/sma/smarsh/phpgwapi/inc/class.contacts_sql.inc.php .
+  870  vi class.contacts_sql.inc.php
+  871  cp /opt/ination/sma/smarsh/phpgwapi/inc/class.auth_sql.inc.php .
+  872  vi class.auth_sql.inc.php
+  873  cp class.auth_sql.inc.php /opt/ination/tra/trainingbeta/phpgwapi/inc/
+  874  vi upgrade_single_file.sh
+  875  ./upgrade_single_file.sh
+  876  cd region-tools/
+  877  ./upgrade_regions scrm-1.2.5-3 northlinewealth
+  878  exit
+  879  cd region-tools/
+  880  ./upgrade_regions scrm-1.2.5-3 mwmg
+  881  cd region-tools/
+  882  ./upgrade_regions scrm-1.2.5-3 capstonecapitalmanagement
+  883  exit
+  884  cd region-tools/
+  885  ./upgrade_regions scrm-1.2.5-3 wealthbydesign
+  886  find / -name '*.log'
+  887  cd /usr/local/apache/logs/
+  888  ll
+  889  vim /etc/apache2/httpd.conf
+  890  tail -f /var/log/apache2/error_log | grep kfs
+  891  tail -n1000 /var/log/apache2/error_log
+  892  ll /var/log/apache2/error_log
+  893  ll -h /var/log/apache2/error_log
+  894  tail -n10000 /var/log/apache2/error_log | more
+  895  pwd
+  896  cd ~/
+  897  ll
+  898  grep 'webdemo' /var/log/apache2/error_log
+  899  grep 'webdemo' /var/log/apache2/error_log > etd_grep_tmp
+  900  ll
+  901  grep 'Sep 24 18:' etd_grep_tmp
+  902  grep 'Sep 24 18:' etd_grep_tmp | grep 'doc'
+  903  ll /etc/apache2/httpd.conf
+  904  vim /etc/apache2/httpd.conf
+  905  cd /etc/apache2/
+  906  ll
+  907  vim vhosts_smarshcrm.conf
+  908  vim vhosts.conf
+  909  vim /etc/apache2/httpd.conf
+  910  vim ssl-global.conf
+  911  date
+  912  ll -la
+  913  ll conf.d
+  914  ll ssl_smarsh
+  915  ll vhosts.d
+  916  vim vhosts.d/vhost.template
+  917  ll
+  918  grep -R 'webdemo' *
+  919  cd /opt/ination/web/webdemo/phpgwapi/inc/
+  920  ll
+  921  vim class.auth_sql.inc.php
+  922  cd /var/ination/
+  923  df -h
+  924  du -h
+  925  cd ../
+  926  ll
+  927  cd /opt/ination/web/webdemo/
+  928  ll
+  929  vim privacy.php
+  930  pwd
+  931  exit
+  932  cd region-tools/
+  933  ls
+  934  ls *admin*
+  935  less change_admin_pass.sql
+  936  vi /opt/ination/sma/smarsh/header.inc.php
+  937  /usr/local/pgsql/bin/psql -U postgres -h excursion global
+  938  cd /opt/ination/hig/highmarkcap/nbmail/inc/
+  939  vi class.uinbmail.inc.php
+  940  tail -f /tmp/php_info.txt
+  941  /usr/local/pgsql/bin/psql -U postgres -h countach highmarkcap
+  942  /usr/local/pgsql/bin/psql -U postgres -h countach defaultinationimage
+  943  /usr/local/pgsql/bin/psql -U postgres -h countach nothlinewealth
+  944  /usr/local/pgsql/bin/psql -U postgres -h countach -l
+  945  /usr/local/pgsql/bin/psql -U postgres -h countach northlinewealth
+  946  vi /opt/ination/nor/northlinewealth/phpgwapi/inc/class.auth_sql.inc.php
+  947  /usr/local/pgsql/bin/psql -U postgres -h countach highmarkcap
+  948  tail -f /tmp/php_info.txt
+  949  /usr/local/pgsql/bin/psql -U postgres -h countach rgc
+  950  top
+  951  ps wax
+  952  df -h
+  953  tail -f /var/log/apache2/error_log | grep foresters
+  954  vi /opt/ination/for/forestersfp/report/inc/class.uireport.inc.php
+  955  vi /opt/ination/kfs/kfs/report/inc/class.uireport.inc.php
+  956  tail -f /var/log/apache2/error_log | grep foresters
+  957  vi /opt/ination/kfs/kfs/report/inc/class.uireport.inc.php
+  958  tail -f /var/log/apache2/error_log | grep foresters
+  959  vi /opt/ination/for/forestersfp/report/inc/class.uireport.inc.php
+  960  tail -f /var/log/apache2/error_log | grep kfs
+  961  vi /opt/ination/pfa/pfa52/nbmail/inc/class.uinbmail.inc.php
+  962  /usr/local/pgsql/bin/psql -U postgres -h countach webdemo
+  963  cd /opt/ination/hig/highmarkcap/nbmail/inc/
+  964  vi class.uinbmail.inc.php
+  965  vi /opt/ination/for/forestersfp/report/inc/class.uireport.inc.php
+  966  vi /opt/ination/kfs/kfs/report/inc/class.uireport.inc.php
+  967  vi class.uinbmail.inc.php
+  968  /usr/local/pgsql/bin/psql -U postgres -h countach highmarkcap
+  969  tail -n 50000 /var/log/apache2/error_log | grep forestersfp
+  970  vi /opt/ination/for/forestersfp/phpgwapi/inc/class.html.inc.php
+  971  tail -n 50000 -f /var/log/apache2/error_log | grep forestersfp
+  972  vi /opt/ination/for/forestersfp/phpgwapi/inc/class.html.inc.php
+  973  vi /opt/ination/for/forestersfp/report/inc/class.uireport.inc.php
+  974  tail -n 50000 -f /var/log/apache2/error_log | grep forestersfp
+  975  vi /opt/ination/kfs/kfs/report/inc/class.uireport.inc.php
+  976  tail -n 50000 -f /var/log/apache2/error_log | grep forestersfp
+  977  less /etc/apache2/vhosts_smarshcrm.conf
+  978  vi /opt/ination/for/forestersfp/header.inc.php
+  979  tail -n 50000 -f /var/log/apache2/error_log | grep forestersfp
+  980  vi /opt/ination/kfs/kfs/report/inc/class.uireport.inc.php
+  981  vi /opt/ination/for/forestersfp/report/inc/class.uireport.inc.php
+  982  tail -n 50000 -f /var/log/apache2/error_log | grep forestersfp
+  983  df -h
+  984  cd /var
+  985  ls
+  986  cd games/
+  987  du -sh *
+  988  ls
+  989  cd ..
+  990  cd ination
+  991  ls du -sh *
+  992  cd rgc/rgc
+  993  ls
+  994  du -sh *
+  995  cd ..
+  996  du -sh rgcapital
+  997  du -sh rgc
+  998  tail -f -n 50000 /var/log/apache2/error_log | grep pfa52
+  999  tail -f /tmp/php_info.txt
+ 1000  cd region-tools/
+ 1001  history
+You have new mail in /var/spool/mail/root
+db9:~/region-tools # harnessimg.import 
+ 

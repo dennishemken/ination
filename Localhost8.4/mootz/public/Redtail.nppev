@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ExportProfile Ver="1.1">
+  <General ConnectionName="Localhost8.4" DatabaseName="mootz" SchemaName="public" ExportType="Text" TargetCodepage="65001" AddTimeStamp="False" TimeStampFormat="" IncludeTitle="True" FieldDelimiter="," DateFormat="MDY" DateSeparator="/" TimeSeparator=":" DecimalSeparator="." TextQualifier="&quot;" RowDelimiter="0" XMLFormat="Element" AppendRecord="False" ContinueOnError="True"/>
+  <STable STableName="address_info" TTableName="" TargetFile="E:\client_data\mootz\address_info.txt" AllFields="True"/>
+  <STable STableName="email_info" TTableName="" TargetFile="E:\client_data\mootz\email_info.txt" AllFields="True"/>
+  <STable STableName="history_info" TTableName="" TargetFile="E:\client_data\mootz\history_info.txt" AllFields="True"/>
+  <STable STableName="main_contact_info" TTableName="" TargetFile="E:\client_data\mootz\main_contact_info.txt" AllFields="True"/>
+  <STable STableName="note_info" TTableName="" TargetFile="E:\client_data\mootz\note_info.txt" AllFields="True"/>
+  <STable STableName="phone_info" TTableName="" TargetFile="E:\client_data\mootz\phone_info.txt" AllFields="True"/>
+</ExportProfile>

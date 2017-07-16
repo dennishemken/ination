@@ -1,0 +1,13 @@
+SELECT
+"public".contacts.contact_id,
+"public".contacts."FirstName",
+"public".contacts."MiddleName",
+"public".contacts."LastName",
+"public".contacts."Company",
+"public".contacts."JobTitle",
+"public".contacts."Birthday",
+"public".contacts."Notes",
+"public".contacts."Spouse",
+"public".contacts."WebPage"
+FROM
+"public".contacts

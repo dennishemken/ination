@@ -1,0 +1,1 @@
+update pg_trigger set tgenabled = false where tgname like 'trg%';

@@ -1,0 +1,9 @@
+SELECT
+"public"."PHONE"."CONTACTID",
+"public"."PHONE"."AREACODE"||'-'||"public"."PHONE"."DIALNUMBER" as Phone_number,
+"public"."PHONE"."EXTENSION",
+"public"."PHONE"."PHONETYPE",
+"public"."PHONE"."REMARK",
+"public"."PHONE"."PURENUMBER"
+FROM
+"public"."PHONE"

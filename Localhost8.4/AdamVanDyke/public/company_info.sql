@@ -1,0 +1,8 @@
+SELECT
+"public"."TBL_COMPANY"."COMPANYID",
+"public"."TBL_COMPANY"."NAME",
+"public"."TBL_COMPANY"."CATEGORY",
+"public"."TBL_COMPANY"."REFERREDBY",
+"public"."TBL_COMPANY"."WEBADDRESS"
+FROM
+"public"."TBL_COMPANY"

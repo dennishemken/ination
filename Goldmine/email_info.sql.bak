@@ -1,0 +1,17 @@
+SELECT
+"public"."new_contact_id"."contact_id",
+"public"."contacts_export1"."E-Mail Address"
+FROM
+"public"."contacts_export1"
+Inner Join "public"."new_contact_id" ON "public"."new_contact_id"."goldmine_recid" = "public"."contacts_export1"."RECID"
+WHERE
+"public"."contacts_export1"."E-Mail Address" IS NOT NULL AND
+"public"."contacts_export1"."RECID" not in 
+(
+SELECT
+"public"."ContSupp"."RECID"
+FROM
+"public"."ContSupp"
+WHERE
+"public"."ContSupp"."RECTYPE" =  'C'
+)
